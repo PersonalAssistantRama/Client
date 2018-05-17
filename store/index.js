@@ -1,15 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk';
 
-import chatReducer from './chat/chat.reducers'
-
-const reducers = combineReducers({
-  data: chatReducer
-})
-
-const store = createStore(reducers)
-
-export default store;
+import reducer from './chat/chat.reducers'
 
 const store = createStore(
   reducer,
