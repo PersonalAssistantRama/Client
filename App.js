@@ -1,58 +1,91 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput,
+  Button,
+  Image,
+  ImageBackground
 } from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
 type Props = {};
 export default class App extends Component<Props> {
+  constructor(props) {
+    super(props);
+    this.state = {text: ''};
+  }
+  cek () {
+    console.log(this.state.text);
+  }
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <ImageBackground source={require('./assets/img/background.jpg')} style={styles.backgroundImage}>
+          <View style={{alignItems:'center', width:'100%'}}>
+            <Text style={styles.both}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </Text>
+          </View>
+          <View style={{alignItems:'center',marginTop:100}}>
+            <Image source={require('./assets/img/both.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+          </View>
+          <View style={{alignItems:'center',marginTop:30}}>
+            <Text style={styles.user}>
+              {this.state.text}
+            </Text>
+          </View>
+          <View style={styles.instructions}>
+            <TextInput
+              placeholder="What you think?"
+              placeholderTextColor="grey"
+              onChangeText={(text) => this.setState({text})}
+              style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%'}}
+            />
+            <View style={{width:'20%'}}>
+              <Button
+                onPress={()=>this.cek()}
+                title="send"
+                />
+            </View>
+          </View>
+        </ImageBackground>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+       flex: 1,
+       width: null,
+       height: null
+   },
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
   instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    position: 'absolute',
+    flexDirection: 'row',
+    left: 0,
+    right: 0,
+    bottom: 0
   },
+  user: {
+    margin:5,
+    padding:10,
+    borderRadius:3,
+    color: 'white',
+    backgroundColor:'#0a0'
+  },
+  both: {
+    margin:5,
+    padding:10,
+    width:'80%',
+    borderRadius:3,
+    color: 'grey',
+    backgroundColor:'white'
+  }
 });
