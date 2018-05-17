@@ -10,10 +10,18 @@ import {
   ImageBackground
 } from 'react-native';
 
-export default class HomeScreen extends Component {
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { getReply } from '../store/chat/chat.actions'
+
+class HomeScreen extends Component {
   constructor() {
     super();
     this.state = {text: ''};
+  }
+
+  replyFromYupi() {
+    this.props.getReply(this.state.text)
   }
   
   render() {
@@ -22,11 +30,11 @@ export default class HomeScreen extends Component {
         <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
           <View style={{alignItems:'center', width:'100%'}}>
             <Text style={styles.both}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500ss,
+              {JSON.stringify(this.props.data)}
             </Text>
           </View>
           <View style={{alignItems:'center',marginTop:100}}>
-            <Image source={require('../assets/img/both.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+            <Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
           </View>
           <View style={{alignItems:'center',marginTop:30}}>
             <Text style={styles.user}>
@@ -42,7 +50,7 @@ export default class HomeScreen extends Component {
             />
             <View style={{width:'20%'}}>
               <Button
-                onPress={()=>this.cek()}
+                onPress={()=>this.replyFromYupi()}
                 title="send"
                 />
             </View>
@@ -86,3 +94,18 @@ const styles = StyleSheet.create({
     backgroundColor:'white'
   }
 });
+
+const mapStateToProps = (state) => ({
+  data: state.data.data,
+  loading: state.data.loading,
+  error: state.data.error
+})
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  getReply,
+}, dispatch)
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HomeScreen);
