@@ -1,24 +1,40 @@
+import axios from 'axios';
+
 import {
   GET_REPLY_LOADING,
-  GET_REPLY_SUCCESS,
-  GET_REPLY_ERROR
-} from './chat.actionsTypes'
+  GET_REPLY_ERROR,
+  GET_REPLY_SUCCESS
+} from './chat.actionsTypes';
 
-import axios from 'axios'
+const loading = () => ({
+  type: GET_REPLY_LOADING
+})
 
-export const showdatas = () => {
+const error = (payload) => ({
+  type: GET_REPLY_ERROR,
+  payload: payload
+})
+
+const getReplySuccess = (payload) => ({
+  type: GET_REPLY_SUCCESS,
+  payload: payload
+})
+
+export const getReply = (string) => {
   return dispatch => {
-    dispatch(loadHeroLoading())
-    axios.get('http://localhost:3000/replies')
-    .then ( response => {
-      dispatch(showdata(response.data))
+    console.log('masuk action', string)
+    
+    axios.post('https://1d307e29.ngrok.io/replies', {
+      text: string
     })
-  }
-}
-
-const showdata = (payload) => {
-  return {
-    type: 'GET_REPLY_SUCCESS',
-    payload:payload
+      .then(response => {
+        console.log('masuk', response)
+        dispatch(getReplySuccess(response.data.data))
+      })
+      .catch(err => {
+        console.log('masuk error')
+        console.log(err)
+        dispatch(error(err))
+      });
   }
 }
