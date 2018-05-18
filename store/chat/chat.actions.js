@@ -22,8 +22,7 @@ const getReplySuccess = (payload) => ({
 
 export const getReply = (string) => {
   return dispatch => {
-    console.log('masuk action', string)
-
+    dispatch(loading());
     axios.post('https://d13e22df.ngrok.io/replies', {
       text: string
     })

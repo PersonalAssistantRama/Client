@@ -46,7 +46,6 @@ class HomeScreen extends Component {
         question: spokenText,
         text: spokenText,
       })
-      
       this.replyFromYupi();      
     } catch(error) {
       switch(error){
@@ -64,57 +63,64 @@ class HomeScreen extends Component {
   }
   
   render() {
-    return (
-      <View style={styles.container}>
-        <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
-
-          <View style={{alignItems:'center', width:'100%'}}>
-          {
-            this.props.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
-          }
-          </View>
-
-          <View style={{alignItems:'center',marginTop:80}}>
+    if(this.props.loading) {
+      return <View><Text>Yupi is typing...</Text></View>
+    } else {
+      if(this.props.data.data) {
+        Tts.speak(this.props.data.data)
+      }
+      return (
+        <View style={styles.container}>
+          <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
+  
+            <View style={{alignItems:'center', width:'100%'}}>
             {
-              this.props.data ?<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
-            :<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+              this.props.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
             }
-          </View>
-
-          <View style={{alignItems:'center',marginTop:30}}>
+            </View>
+  
+            <View style={{alignItems:'center',marginTop:80}}>
+              {
+                this.props.data ?<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+              :<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+              }
+            </View>
+  
+            <View style={{alignItems:'center',marginTop:30}}>
+              {
+                this.props.data ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
+              }
+            </View>
+  
+            <View style={styles.instructions}>
+              <TextInput
+                placeholder="What you think?"
+                placeholderTextColor="grey"
+                onChangeText={(text) => this.setState({text})}
+                onSubmitEditing={(event) => this.replyFromYupi()}
+                style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%', backgroundColor:'white'}}
+              />
             {
-              this.props.data ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
+              this.state.text ?
+                <View style={{width:'20%'}}>
+                  <Button
+                    onPress={()=>this.replyFromYupi()}
+                    title="send"
+                    />
+                </View>:
+                <View style={{width:'20%'}}>
+                  <TouchableHighlight onPress={this.onSpeak} style={{alignItems:'center'}}>
+                    <View>
+                        <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
+                    </View>
+                  </TouchableHighlight>
+                </View>
             }
-          </View>
-
-          <View style={styles.instructions}>
-            <TextInput
-              placeholder="What you think?"
-              placeholderTextColor="grey"
-              onChangeText={(text) => this.setState({text})}
-              onSubmitEditing={(event) => this.replyFromYupi()}
-              style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%', backgroundColor:'white'}}
-            />
-          {
-            this.state.text ?
-              <View style={{width:'20%'}}>
-                <Button
-                  onPress={()=>this.replyFromYupi()}
-                  title="send"
-                  />
-              </View>:
-              <View style={{width:'20%'}}>
-                <TouchableHighlight onPress={this.onSpeak} style={{alignItems:'center'}}>
-                  <View>
-                      <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
-                  </View>
-                </TouchableHighlight>
-              </View>
-          }
-          </View>
-        </ImageBackground>
-      </View>
-    );
+            </View>
+          </ImageBackground>
+        </View>
+      );
+    }
   }
 }
 
