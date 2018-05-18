@@ -23,13 +23,13 @@ const getReplySuccess = (payload) => ({
 export const getReply = (string) => {
   return dispatch => {
     console.log('masuk action', string)
-    
-    axios.post('https://1d307e29.ngrok.io/replies', {
+
+    axios.post('https://07f387f5.ngrok.io/replies', {
       text: string
     })
       .then(response => {
         console.log('masuk', response)
-        dispatch(getReplySuccess(response.data.data))
+        dispatch(getReplySuccess(response.data))
       })
       .catch(err => {
         console.log('masuk error')
