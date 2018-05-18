@@ -9,15 +9,19 @@ import {
   Image,
   ImageBackground
 } from 'react-native';
+import axios from 'axios'
 
 type Props = {};
 export default class App extends Component<Props> {
   constructor(props) {
     super(props);
-    this.state = {text: ''};
+    this.state = {text: ''}
   }
   cek () {
-    console.log(this.state.text);
+    axios.post('http://localhost:3000/replies',{text:'hai'},
+    {headers: {'X-Custom-Header': 'foobar'}}).then(response =>{
+      console.log(response)
+    }).catch(err => console.log(err))
   }
   render() {
     return (
@@ -43,12 +47,22 @@ export default class App extends Component<Props> {
               onChangeText={(text) => this.setState({text})}
               style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%'}}
             />
-            <View style={{width:'20%'}}>
-              <Button
-                onPress={()=>this.cek()}
-                title="send"
-                />
-            </View>
+          {
+            this.state.text ?
+              <View style={{width:'20%'}}>
+                <Button
+                  onPress={()=>this.cek()}
+                  title="send"
+                  />
+              </View>:
+              <View style={{width:'20%'}}>
+                <Button
+                  onPress={()=>this.cek()}
+                  title="voice"
+                  />
+              </View>
+          }
+
           </View>
         </ImageBackground>
       </View>
