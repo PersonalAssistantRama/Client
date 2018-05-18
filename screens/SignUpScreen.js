@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import {
   View,
-  Text,
-  TextInput,
-  Button,
   StyleSheet,
   ScrollView
 } from 'react-native'
@@ -12,6 +9,20 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {registerUser} from '../store/user/user.actions'
 import {Alert} from 'react-native'
+import { Container,
+  Content,
+  Form,
+  Item,
+  Input,
+  Label,
+  Button,
+  Text,
+  Body,
+  ListItem,
+  Radio,
+  Left,
+  Right
+} from 'native-base';
 
 class SignUpScreen extends Component {
 
@@ -22,11 +33,9 @@ class SignUpScreen extends Component {
       password: '',
       first_name: '',
       last_name: '',
-      gender: '',
-      wakeUpTime: '',
-      sleepTime: ''
+      gender: ''
     }
-  }
+  } 
 
   SignUpButton = () => {
     let newUser = {
@@ -34,9 +43,7 @@ class SignUpScreen extends Component {
       password: this.state.password,
       first_name: this.state.first_name,
       last_name: this.state.last_name,
-      gender: this.state.gender,
-      wakeUpTime: this.state.wakeUpTime,
-      sleepTime: this.state.sleepTime
+      gender: this.state.gender
     }
 
     this.props.registerUser(newUser)
@@ -47,81 +54,86 @@ class SignUpScreen extends Component {
 
   render() {
     return (
-      <ScrollView>
-          <View>
-          <Text style={styles.title}>Welcome to Yupi</Text>
-          <View style={styles.textContainer}>
-            <TextInput style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({username:input})}
-              value={this.state.username}
-              placeholder="username.."
-              />
-          </View>
-          <View style={styles.textContainer}>
-            <TextInput 
+      <Container>
+        <Content style={{paddingHorizontal:20}}>
+          <Form style={{paddingVertical:30}}>
+            <Item floatingLabel last style={ styles.questionForm }>
+              <Label>Username</Label>
+              <Input
+              name="username"
+              autoCapitalize='none'
+              value={ this.state.username }
+              onChangeText={(username) => this.setState({username}) }/>
+            </Item>
+            <Item floatingLabel last style={ styles.questionForm }>
+              <Label>Password</Label>
+              <Input
+              name="password"
+              autoCapitalize='none'
               secureTextEntry={true}
-              style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({password:input})}
-              value={this.state.password}
-              placeholder="password"
-              />
-          </View>
-          <View style={styles.textContainer}>
-            <TextInput style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({first_name:input})}
-              value={this.state.first_name}
-              placeholder="first name.."
-              />
-          </View>
-          <View style={styles.textContainer}>
-            <TextInput style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({last_name:input})}
-              value={this.state.last_name}
-              placeholder="last name.."
-              />
-          </View>
-          <View style={styles.textContainer}>
-            <TextInput style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({gender:input})}
-              value={this.state.gender}
-              placeholder="gender.."
-              />
-          </View>
-          <View style={styles.textContainer}>
-            <TextInput style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({wakeUpTime:input})}
-              value={this.state.wakeUpTime}
-              placeholder="wake up time.."
-              />
-          </View>
-          <View style={styles.textContainer}>
-            <TextInput style = {styles.input}
-              underlineColorAndroid = "transparent"
-              autoCapitalize = "none"
-              onChangeText = {(input) => this.setState({sleepTime:input})}
-              value={this.state.sleepTime}
-              placeholder="sleep time.."
-              />
-          </View>
-          <Button
-            title="Sign Up"
-            onPress={() => this.SignUpButton()}
-          >
+              value={ this.state.password }
+              onChangeText={(password) => this.setState({password}) }/>
+            </Item>
+            <Item floatingLabel last style={ styles.questionForm }>
+              <Label>First Name</Label>
+              <Input
+              name="first_name"
+              autoCapitalize='none'
+              value={ this.state.first_name }
+              onChangeText={(first_name) => this.setState({first_name}) }/>
+            </Item>
+            <Item floatingLabel last style={ styles.questionForm }>
+              <Label>Last Name</Label>
+              <Input
+              name="last_name"
+              autoCapitalize='none'
+              value={ this.state.last_name }
+              onChangeText={(last_name) => this.setState({last_name}) }/>
+            </Item>
+            <Content>
+              <Label>Gender</Label>
+              <ListItem 
+                onPress={() => this.setState({gender: 'male'})}
+                selected={this.state.gender == 'male'}>
+              <Left>
+                <Text>Male</Text>
+              </Left>
+              <Right>
+                <Radio
+                  color={"#f0ad4e"}
+                  selectedColor={"#5cb85c"}
+                  onPress={() => this.setState({gender: 'male'})}
+                  selected={this.state.gender == 'male'}
+                />
+              </Right>
+            </ListItem>
+            <ListItem 
+              onPress={() => this.setState({gender: 'female'})}
+              selected={this.state.gender == 'female'}>
+              <Left>
+                <Text>Female</Text>
+              </Left>
+              <Right>
+                <Radio
+                  color={"#f0ad4e"}
+                  selectedColor={"#5cb85c"}
+                  onPress={() => this.setState({gender: 'female'})}
+                  selected={this.state.gender == 'female'}
+                />
+              </Right>
+            </ListItem>
+          </Content>
+          </Form>
+          <Body style={{flexDirection:'row',justifyContent:'center'}}>
+          <Button rounded success
+            onPress={()=>this.SignUpButton()}
+            >
+            <Text style={{textAlign: 'center'}}>Register</Text>
           </Button>
-        </View>
-      </ScrollView>
+          </Body>
+        </Content>
+
+      </Container>
     );
   }
 }
@@ -147,6 +159,10 @@ const styles = StyleSheet.create({
     width: 150,
     paddingLeft: 20,
     paddingRight: 20
+  },
+  questionForm: {
+    marginVertical:10,
+    // backgroundColor:'grey'
   }
 })
 

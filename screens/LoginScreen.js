@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import {
   View,
-  Text,
-  TextInput,
-  Button,
   StyleSheet,
-  TouchableHighlight
+  Image
 } from 'react-native'
 
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {loginUser} from '../store/user/user.actions'
 import {Alert} from 'react-native'
+import { Container,
+  Content,
+  Form,
+  Item,
+  Input,
+  Label,
+  Button,
+  Text,
+  Thumbnail,
+  Body} from 'native-base';
 
 class LoginScreen extends Component {
   constructor () {
@@ -35,74 +42,71 @@ class LoginScreen extends Component {
 
   render() {
     return (
-      <View>
-        <Text style={styles.title}>Welcome to Yupi</Text>
-        <View style={styles.textContainer}>
-          <TextInput style = {styles.input}
-            underlineColorAndroid = "transparent"
-            autoCapitalize = "none"
-            onChangeText = {(input) => this.setState({username:input})}
-            value={this.state.username}
-            placeholder="username.."
+      <Container>
+        <Content style={{paddingHorizontal:20}}>
+        <Body style={{flexDirection:'row',justifyContent:'center'}}>
+          <Thumbnail 
+            source={require('../assets/img/both.png')}
+            style={{alignContent:'center',width: 100, height: 100}}
             />
-        </View>
-        <View style={styles.textContainer}>
-          <TextInput 
-            secureTextEntry={true}
-            style = {styles.input}
-            underlineColorAndroid = "transparent"
-            autoCapitalize = "none"
-            onChangeText = {(input) => this.setState({password:input})}
-            value={this.state.password}
-            placeholder="password"
-            />
-        </View>
-        <Button
-          title="Login"
-          onPress={()=>this.loginButton()}
-        >
-        </Button>
-        <View>
-          <Text>Don't have an account?</Text>
-          <TouchableHighlight
-          onPress={() => this.props.navigation.navigate('SignUp')}
-          >
+            </Body>
+          <Text style={styles.title}>Yupi - Your Personal Assistant</Text>
+          <Form style={{paddingVertical:30}}>
+            <Item fixedLabel last rounded style={ styles.questionForm }>
+              <Label>Username</Label>
+              <Input
+              name="username"
+              autoCapitalize='none'
+              value={ this.state.username }
+              onChangeText={(username) => this.setState({username}) }/>
+            </Item>
+            <Item fixedLabel last rounded style={ styles.questionForm }>
+              <Label>Password</Label>
+              <Input
+              name="password"
+              autoCapitalize='none'
+              secureTextEntry={true}
+              value={ this.state.password }
+              onChangeText={(password) => this.setState({password}) }/>
+            </Item>
+          </Form>
+          <Body style={{flexDirection:'row',justifyContent:'center'}}>
+          <Button rounded success
+            onPress={()=>this.loginButton()}
+            >
+            <Text style={{textAlign: 'center'}}>Login</Text>
+          </Button>
+          </Body>
+          <Body style={{flexDirection:'row',justifyContent:'center'}}>
+          <Text style={{paddingVertical:5}}>Don't have an account?</Text>
+          <Button transparent
+            onPress={() => this.props.navigation.navigate('SignUp')}
+            >
             <Text>SIGN UP</Text>
-          </TouchableHighlight>
-        </View>
-      </View>
+          </Button>
+          </Body>
+        </Content>
+
+      </Container>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 20,
+  buttonLogin: {
+    width: 150,
+    paddingLeft: 20,
+    paddingRight: 20,
+    textAlign: 'center'
+  },
+  questionForm: {
+    marginVertical:10,
+    backgroundColor:'white'
   },
   title: {
-    fontSize: 20
-  },
-  textContainer: {
-    margin: 20,
-    borderLeftWidth: 2,
-    borderRightWidth: 2,
-    borderTopWidth: 2,
-    borderBottomWidth: 2
-  },
-  input: {
-    width: 200,
-    paddingLeft: 20,
-    paddingRight: 20
-  },
-  btnPlay: {
-    paddingLeft: 100,
-    paddingRight: 100,
-    paddingTop: 20,
-    paddingBottom: 20,
-    borderRadius: 20
+    textAlign: 'center',
+    fontSize: 20,
+    paddingTop: 5
   }
 })
 
