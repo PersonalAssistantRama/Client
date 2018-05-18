@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
   },
   questionForm: {
     marginVertical:10,
-    // backgroundColor:'grey'
+    // backgroundColor:'white'
   }
 })
 
