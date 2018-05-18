@@ -7,7 +7,8 @@ import {
   TextInput,
   Button,
   Image,
-  ImageBackground
+  ImageBackground,
+  TouchableHighlight
 } from 'react-native';
 
 import { connect } from 'react-redux'
@@ -17,45 +18,70 @@ import { getReply } from '../store/chat/chat.actions'
 class HomeScreen extends Component {
   constructor() {
     super();
-    this.state = {text: ''};
+    this.state = {
+      text: '',
+      question: ''
+    };
   }
 
   replyFromYupi() {
+    let yourquestion = this.state.text
     this.props.getReply(this.state.text)
+    this.setState({
+      question: yourquestion,
+    })
   }
-  
+
   render() {
+
     return (
       <View style={styles.container}>
         <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
+
           <View style={{alignItems:'center', width:'100%'}}>
-            <Text style={styles.both}>
-              {JSON.stringify(this.props.data)}
-            </Text>
+          {
+            this.props.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
+          }
           </View>
-          <View style={{alignItems:'center',marginTop:100}}>
-            <Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+
+          <View style={{alignItems:'center',marginTop:80}}>
+            {
+              this.props.data ?<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+            :<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+            }
           </View>
+
           <View style={{alignItems:'center',marginTop:30}}>
-            <Text style={styles.user}>
-              {this.state.text}
-            </Text>
+            {
+              this.props.data ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
+            }
           </View>
+
           <View style={styles.instructions}>
             <TextInput
               placeholder="What you think?"
               placeholderTextColor="grey"
               onChangeText={(text) => this.setState({text})}
-              style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%'}}
-              onKeyPress={()=>this.replyFromYupi()}
+              onSubmitEditing={(event) => this.replyFromYupi()}
+              style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%', backgroundColor:'white'}}
             />
-            <View style={{width:'20%'}}>
-              <Button
-                onPress={()=>this.replyFromYupi()}
-                
-                title="send"
-                />
-            </View>
+          {
+            this.state.text ?
+              <View style={{width:'20%'}}>
+                <Button
+                  onPress={()=>this.replyFromYupi()}
+                  title="send"
+                  />
+              </View>:
+              <View style={{width:'20%'}}>
+                <TouchableHighlight onPress={()=>{}} style={{alignItems:'center'}}>
+                 <View>
+                     <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
+                 </View>
+             </TouchableHighlight>
+              </View>
+          }
+
           </View>
         </ImageBackground>
       </View>
