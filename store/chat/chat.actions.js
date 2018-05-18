@@ -24,13 +24,17 @@ export const getReply = (string) => {
   return dispatch => {
     console.log('masuk action', string)
     
-    axios.post('http://localhost:3000/replies', {
+    axios.post('https://1d307e29.ngrok.io/replies', {
       text: string
     })
       .then(response => {
         console.log('masuk', response)
-        dispatch(getReplySuccess(response.data))
+        dispatch(getReplySuccess(response.data.data))
       })
-      .catch(err => dispatch(error(err)));
+      .catch(err => {
+        console.log('masuk error')
+        console.log(err)
+        dispatch(error(err))
+      });
   }
 }
