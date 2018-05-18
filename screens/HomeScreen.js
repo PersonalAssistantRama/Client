@@ -6,22 +6,28 @@ import {
   View,
   TextInput,
   Button,
+  ToastAndroid,
   Image,
   ImageBackground,
   TouchableHighlight
 } from 'react-native';
+import SpeechAndroid from 'react-native-android-voice';
+import Tts from 'react-native-tts';
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { getReply } from '../store/chat/chat.actions'
 
 class HomeScreen extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       text: '',
-      question: ''
+      question: '',
+      showText: null
     };
+
+    this.onSpeak = this.onSpeak.bind(this);
   }
 
   replyFromYupi() {
@@ -29,11 +35,35 @@ class HomeScreen extends Component {
     this.props.getReply(this.state.text)
     this.setState({
       question: yourquestion,
+      text: ''
     })
   }
 
+  async onSpeak() {
+    try {
+      const spokenText = await SpeechAndroid.startSpeech("talk to yupi", SpeechAndroid.INDONESIAN);
+      this.setState({
+        question: spokenText,
+        text: spokenText,
+      })
+      
+      this.replyFromYupi();      
+    } catch(error) {
+      switch(error){
+        case SpeechAndroid.E_VOICE_CANCELLED:
+          ToastAndroid.show("Voice Recognizer cancelled" , ToastAndroid.LONG);
+          break;
+        case SpeechAndroid.E_NO_MATCH:
+          ToastAndroid.show("No match for what you said" , ToastAndroid.LONG);
+          break;
+        case SpeechAndroid.E_SERVER_ERROR:
+          ToastAndroid.show("Google Server Error" , ToastAndroid.LONG);
+          break;
+      }
+    }
+  }
+  
   render() {
-
     return (
       <View style={styles.container}>
         <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
@@ -74,14 +104,13 @@ class HomeScreen extends Component {
                   />
               </View>:
               <View style={{width:'20%'}}>
-                <TouchableHighlight onPress={()=>{}} style={{alignItems:'center'}}>
-                 <View>
-                     <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
-                 </View>
-             </TouchableHighlight>
+                <TouchableHighlight onPress={this.onSpeak} style={{alignItems:'center'}}>
+                  <View>
+                      <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
+                  </View>
+                </TouchableHighlight>
               </View>
           }
-
           </View>
         </ImageBackground>
       </View>

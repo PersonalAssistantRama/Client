@@ -14,7 +14,7 @@ export const registerUser = (data) => {
     try {
       const user = await axios({
         method: 'post',
-        url: 'https://16ed310f.ngrok.io/users/signup',
+        url: 'https://d13e22df.ngrok.io/users/signup',
         data: data
       })
       let token = user.data.token
