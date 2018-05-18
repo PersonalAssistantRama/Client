@@ -8,12 +8,11 @@ import {
   ScrollView
 } from 'react-native'
 
-import axios from 'axios'
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import {registerUser} from '../store/user/user.actions'
+import {Alert} from 'react-native'
 
-var radio_props = [
-  {label: 'param1', value: 0 },
-  {label: 'param2', value: 1 }
-];
 class SignUpScreen extends Component {
 
   constructor () {
@@ -39,15 +38,12 @@ class SignUpScreen extends Component {
       wakeUpTime: this.state.wakeUpTime,
       sleepTime: this.state.sleepTime
     }
-    axios({
-      method: 'post',
-      url: 'https://dff92a5a.ngrok.io/users/signup',
-      data: newUser,
-    }).then(response => {
-      console.log(response)
-      this.props.navigation.navigate('Home')
-    })
+
+    this.props.registerUser(newUser)
+    Alert.alert('Register Succes')
+    this.props.navigation.navigate('Home')
   }
+
 
   render() {
     return (
@@ -142,23 +138,24 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     margin: 10,
-    // borderLeftWidth: 2,
-    // borderRightWidth: 2,
-    // borderTopWidth: 2,
+    borderLeftWidth: 2,
+    borderRightWidth: 2,
+    borderTopWidth: 2,
     borderBottomWidth: 2
   },
   input: {
-    width: 200,
+    width: 150,
     paddingLeft: 20,
     paddingRight: 20
-  },
-  btnPlay: {
-    paddingLeft: 100,
-    paddingRight: 100,
-    paddingTop: 20,
-    paddingBottom: 20,
-    borderRadius: 20
   }
 })
 
-export default SignUpScreen;
+const mapStateToProps = (state) => ({
+  user: state.user
+})
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  registerUser
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps) (SignUpScreen);

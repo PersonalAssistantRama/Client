@@ -3,6 +3,8 @@ import {createStackNavigator} from 'react-navigation'
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
+import {Provider} from 'react-redux'
+import store from './store/index'
 
 const RootStack = createStackNavigator({
   Login: {
@@ -19,7 +21,9 @@ const RootStack = createStackNavigator({
 export default class App extends Component {
   render() {
     return (
-      <RootStack />
+      <Provider store={store}>
+        <RootStack />
+      </Provider>
     );
   }
 }

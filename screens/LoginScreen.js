@@ -8,7 +8,10 @@ import {
   TouchableHighlight
 } from 'react-native'
 
-import axios from 'axios'
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import {loginUser} from '../store/user/user.actions'
+import {Alert} from 'react-native'
 
 class LoginScreen extends Component {
   constructor () {
@@ -25,14 +28,9 @@ class LoginScreen extends Component {
       username: this.state.username,
       password: this.state.password
     }
-    axios({
-      method: 'post',
-      url: 'https://dff92a5a.ngrok.io/users/signin',
-      data: user,
-    }).then(response => {
-      console.log(response)
-      this.props.navigation.navigate('Home')
-    })
+    this.props.loginUser(user)
+    Alert.alert('Login Succes')
+    this.props.navigation.navigate('Home')
   }
 
   render() {
@@ -45,7 +43,7 @@ class LoginScreen extends Component {
             autoCapitalize = "none"
             onChangeText = {(input) => this.setState({username:input})}
             value={this.state.username}
-            placeholder="email.."
+            placeholder="username.."
             />
         </View>
         <View style={styles.textContainer}>
@@ -108,4 +106,12 @@ const styles = StyleSheet.create({
   }
 })
 
-export default LoginScreen;
+const mapStateToProps = (state) => ({
+  user: state.user
+})
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  loginUser
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps) (LoginScreen);
