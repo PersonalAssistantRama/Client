@@ -47,10 +47,12 @@ class HomeScreen extends Component {
               placeholderTextColor="grey"
               onChangeText={(text) => this.setState({text})}
               style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%'}}
+              onKeyPress={()=>this.replyFromYupi()}
             />
             <View style={{width:'20%'}}>
               <Button
                 onPress={()=>this.replyFromYupi()}
+                
                 title="send"
                 />
             </View>
