@@ -9,8 +9,10 @@ import {
   ToastAndroid,
   Image,
   ImageBackground,
-  TouchableHighlight
+  TouchableHighlight,
+  ScrollView
 } from 'react-native';
+import {Container} from 'native-base'
 import SpeechAndroid from 'react-native-android-voice';
 import Tts from 'react-native-tts';
 
@@ -113,23 +115,27 @@ class HomeScreen extends Component {
         this.state.audio = false
       }
       return (
+        <Container>
         <View style={styles.container}>
           <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
+          <ScrollView>
             <View style={{alignItems:'center', width:'100%'}}>
             {
               this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
             }
             </View>
+            { this.props.movies ? <MovieComponent/> : <Text></Text> }
 
             <View style={{alignItems:'center',marginTop:0}}>
               <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
             </View>
 
-            <View style={{alignItems:'center',marginTop:30}}>
+            <View style={{alignItems:'center',marginTop:30, paddingBottom:40}}>
               {
                 this.state.question != '' ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
               }
             </View>
+            </ScrollView>
 
             <View style={styles.instructions}>
               <TextInput
@@ -156,6 +162,7 @@ class HomeScreen extends Component {
             </View>
           </ImageBackground>
         </View>
+        </Container>
       );
     }
   }
@@ -213,6 +220,7 @@ const mapStateToProps = (state) => ({
   error: state.data.error,
   inGame: state.data.inGame,
   idGame: state.data.idGame,
+  movies: state.data.movies
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({

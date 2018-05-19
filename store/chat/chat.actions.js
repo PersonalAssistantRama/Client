@@ -5,7 +5,8 @@ import {
   GET_REPLY_ERROR,
   GET_REPLY_SUCCESS,
   SET_INGAME_MODE,
-  SET_NOT_INGAME_MODE
+  SET_NOT_INGAME_MODE,
+  SHOW_MOVIE_LIST
 } from './chat.actionsTypes';
 
 const loading = () => ({
@@ -29,6 +30,11 @@ const enterInGame = (payload) => ({
 
 const editNotInGame = () => ({
   type: SET_NOT_INGAME_MODE
+})
+
+const changeMovieStatus = (payload) => ({
+  type: SHOW_MOVIE_LIST,
+  payload
 })
 
 export const answerGame = (id, answer) => {
@@ -65,17 +71,19 @@ export const getReply = (string) => {
         const replyFromYupi = response.data.data;
         if (replyFromYupi.data == 'DUJDS325UEWHCSZNCHSHSADHS') {
           // get movie
-          let movieReply = "Film yang Yupi rekomendasiin buat kamu: "
-          axios.get('https://cfe485a0.ngrok.io/movies')
-          .then(response => {
-            response.data.data.data.map(movie => {
-              movieReply = movieReply + " " + movie.title
-            })
-            dispatch(getReplySuccess({ data: movieReply }))
-          })
-          .catch(err => {
-            dispatch(error(err))
-          })
+          // let movieReply = "Film yang Yupi rekomendasiin buat kamu: "
+          // axios.get('https://cfe485a0.ngrok.io/movies')
+          // .then(response => {
+          //   // response.data.data.data.map(movie => {
+          //   //   movieReply = movieReply + " " + movie.title
+          //   // })
+          //   dispatch(getReplySuccess({ data: movieReply }))
+          // })
+          // .catch(err => {
+          //   dispatch(error(err))
+          // })
+          dispatch(getReplySuccess({data: 'Film yang Yupi rekomendasiin buat kamu:'}))
+          dispatch(changeMovieStatus(true))
         } else if (replyFromYupi.data == 'IWJFDXNC6YWEJ235HKMWJDIWE') {
           let foodReply = "Makanan yang Yupi rekomendasiin buat kamu: "
           axios.get('https://cfe485a0.ngrok.io/foods')
@@ -84,6 +92,7 @@ export const getReply = (string) => {
               foodReply = foodReply + " " + food.restaurant.name
             })
             dispatch(getReplySuccess({ data: foodReply }))
+            dispatch(changeMovieStatus(false))
           })
           .catch(err => {
             dispatch(error(err))
@@ -97,15 +106,18 @@ export const getReply = (string) => {
             dispatch(enterInGame(response.data.data.data._id))
             console.log('id game----', response.data.data.data._id)
             dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.data.question }))
+            dispatch(changeMovieStatus(false))
           })
           .catch(err => {
             dispatch(error(err))
           })
         } else if (replyFromYupi.data === 'BZIMI2J4MLIFAHNWMW520JU8D') {
           dispatch(getReplySuccess(replyFromYupi))
+          dispatch(changeMovieStatus(false))
           // main game tebak kata
         } else {
           dispatch(getReplySuccess(replyFromYupi))
+          dispatch(changeMovieStatus(false))
         }
       })
       .catch(err => {

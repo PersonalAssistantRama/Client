@@ -60,7 +60,8 @@ class MovieComponent extends Component {
 
 const styles = StyleSheet.create({
   listMovie: {
-    marginHorizontal: 2
+    marginHorizontal: 2,
+    paddingTop: 2
   }
 })
 
