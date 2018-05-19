@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {createStackNavigator} from 'react-navigation'
+import {createStackNavigator, SwitchNavigator} from 'react-navigation'
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
 import {Provider} from 'react-redux'
 import store from './store/index'
 
-const RootStack = createStackNavigator({
+const RootStack = SwitchNavigator({
   Login: {
     screen: LoginScreen
   },

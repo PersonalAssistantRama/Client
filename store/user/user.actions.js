@@ -6,39 +6,38 @@ import {
 } from './user.actionTypes'
 
 import axios from 'axios'
-import {Alert} from 'react-native'
 
 export const registerUser = (data) => {
-  return dispatch => {
+  return async dispatch => {
     dispatch(loading())
-      axios({
+    try {
+      const user = await axios({
         method: 'post',
-        url: 'https://cfe485a0.ngrok.io/users/signup',
+        url: 'https://6b9d6b89.ngrok.io/users/signup',
         data: data
-      }).then(response => {
-        dispatch(registerSuccess(user.data))
-      }).catch(error => {
-        dispatch(errorCheck())
       })
+      dispatch(registerSuccess(user.data))
+    } catch (error) {
+      dispatch(errorCheck())
     }
-  
+  }
 }
 
 export const loginUser = (data) => {
-  return dispatch => {
+  return async dispatch => {
     dispatch(loading())
-      axios({
+    try {
+      const user = await axios({
         method: 'post',
-        url: 'https://b18693e5.ngrok.io/users/signin',
+        url: 'https://6b9d6b89.ngrok.io/users/signin',
         data: data
-      }).then(response => {
-        console.log('reslogin===', response)
-        dispatch(loginSuccess(response.data))
-      }).catch(error => {
-        console.log('action---', error)
-        dispatch(errorCheck())
       })
+      dispatch(loginSuccess(user.data))
+    } catch (error) {
+      console.log('action---', error)
+      dispatch(errorCheck())
     }
+  }
 }
 
 const registerSuccess = (data) => ({

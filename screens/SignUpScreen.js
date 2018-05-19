@@ -37,7 +37,7 @@ class SignUpScreen extends Component {
     }
   } 
 
-  SignUpButton = () => {
+  SignUpButton = async () => {
     let newUser = {
       username: this.state.username,
       password: this.state.password,
@@ -46,8 +46,12 @@ class SignUpScreen extends Component {
       gender: this.state.gender
     }
 
-    this.props.registerUser(newUser)
-    this.props.navigation.navigate('Home')
+    await this.props.registerUser(newUser)
+    if(this.props.user.isLogin) {
+      this.props.navigation.navigate('Home')
+    } else {
+      Alert.alert('register failed!')
+    }
   }
 
 
