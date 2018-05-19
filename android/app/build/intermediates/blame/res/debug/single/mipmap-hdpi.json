@@ -18,5 +18,9 @@
     {
         "merged": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/lupa/phase3/final/client/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/lupa/phase3/final/client/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]
