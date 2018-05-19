@@ -18,6 +18,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { getReply } from '../store/chat/chat.actions'
 import LoadingHome from '../components/LoadingHome'
+import MovieComponent from '../components/MovieComponent'
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -79,8 +80,9 @@ class HomeScreen extends Component {
               this.props.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
             }
             </View>
+            {/* <MovieComponent/> */}
   
-            <View style={{alignItems:'center',marginTop:80}}>
+            <View style={{alignItems:'center',marginTop:0}}>
               {
                 this.props.data ?<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
               :<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
@@ -100,7 +102,7 @@ class HomeScreen extends Component {
                 onChangeText={(text) => this.setState({text})}
                 onSubmitEditing={(event) => this.replyFromYupi()}
                 style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%', backgroundColor:'white'}}
-              />
+                />
             {
               this.state.text ?
                 <View style={{width:'20%'}}>
@@ -127,9 +129,9 @@ class HomeScreen extends Component {
 
 const styles = StyleSheet.create({
   backgroundImage: {
-       flex: 1,
-       width: null,
-       height: null
+    flex: 1,
+    width: null,
+    height: null
    },
   container: {
     flex: 1,

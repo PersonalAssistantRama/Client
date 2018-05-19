@@ -5,7 +5,7 @@ import {
   ERROR
 } from './user.actionTypes'
 
-const initalState = {
+const initialState = {
   data: {},
   isLogin: false,
   loading: false,
@@ -44,3 +44,5 @@ const reducers = (state={...initialState}, action) => {
     return state
   }
 }
+
+export default reducers
