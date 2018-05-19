@@ -28,7 +28,8 @@ class HomeScreen extends Component {
     this.state = {
       text: '',
       question: '',
-      showText: null
+      showText: null,
+      audio: false
     };
 
     this.onSpeak = this.onSpeak.bind(this);
@@ -51,6 +52,7 @@ class HomeScreen extends Component {
         text: spokenText,
       })
       this.replyFromYupi();
+      this.state.audio=true
     } catch(error) {
       switch(error){
         case SpeechAndroid.E_VOICE_CANCELLED:
@@ -93,8 +95,9 @@ class HomeScreen extends Component {
     if(this.props.loading) {
       return <LoadingHome/>
     } else {
-      if(this.props.data.data) {
+      if(this.state.audio) {
         Tts.speak(this.props.data.data)
+        this.state.audio = false
       }
       return (
         <View style={styles.container}>
