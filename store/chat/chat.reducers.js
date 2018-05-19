@@ -7,6 +7,7 @@ import {
 } from './chat.actionsTypes'
 
 const initialState = {
+  idGame: '',
   data : {},
   loading: false,
   error: {
@@ -14,7 +15,6 @@ const initialState = {
     message: ''
   },
   inGame: false,
-  idGame: 'a'
 }
 
 const reducers = (state = {...initialState} , action) => {
@@ -22,7 +22,7 @@ const reducers = (state = {...initialState} , action) => {
     case GET_REPLY_LOADING:
       return {
         ...state,
-        loading: true
+        loading: true,
       }
 
     case GET_REPLY_ERROR:
@@ -46,6 +46,7 @@ const reducers = (state = {...initialState} , action) => {
       }
 
     case SET_INGAME_MODE:
+      console.log('set ingame mode-', action.payload)
       return {
         ...state,
         idGame: action.payload,
@@ -53,9 +54,11 @@ const reducers = (state = {...initialState} , action) => {
       }
     
     case SET_NOT_INGAME_MODE:
+      console.log('masa ga masuk sini...')
       return {
         ...state,
         inGame: false,
+        idGame: ''
       }
 
     default:

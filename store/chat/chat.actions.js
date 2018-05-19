@@ -28,23 +28,31 @@ const enterInGame = (payload) => ({
 })
 
 const editNotInGame = () => ({
-  type: SET_NOT_INGAME_MODE,
+  type: SET_NOT_INGAME_MODE
 })
 
-export const answerGame = (id, answer) => {``
-  console.log('masok pokoknya', id + '==', answer)
-  // dispatch(getReplySuccess({ data: "masuk sini" }))
-  // dispatch(loading());
-  // axios.post('https://cfe485a0.ngrok.io/games/quiz', {
-  //   id, answer
-  // })
-  //   .then(response => {
-  //     console.log('response answer game', response)
-  //     dispatch(editNotInGame());
-  //   })
-  //   .catch(err => {
-  //     dispatch(error(err))
-  //   })
+export const answerGame = (id, answer) => {
+  return dispatch => {
+    console.log('masok pokoknya', id + '==', answer)
+    axios.post('https://cfe485a0.ngrok.io/games/quiz', {
+      id, answer
+    })
+      .then(response => {
+        console.log('response answer game', response.data.data.data.isCorrect)
+        const isCorrect = response.data.data.data.isCorrect;
+        if(isCorrect) {
+          console.log('benar!!!!')
+          dispatch(getReplySuccess({ data: 'Tebakan kamu benar!'}))
+        } else {
+          console.log('salah!!!!')
+          dispatch(getReplySuccess({ data: 'Tebakan kamu salah, Payah nih!'}))
+        }
+        dispatch(editNotInGame());
+      })
+      .catch(err => {
+        dispatch(error(err))
+      })
+  }
 }
 
 export const getReply = (string) => {
@@ -81,19 +89,18 @@ export const getReply = (string) => {
             dispatch(error(err))
           })
         } else if (replyFromYupi.data === 'J972JNMOQUEMZ29582MJWIEJW') {
-          dispatch(getReplySuccess(replyFromYupi))
           // main game quiz
-          // axios.get('https://cfe485a0.ngrok.io/games/quiz')
-          // .then(response => {
-          //   console.log('masuk game', response)
-          //   // dispatch(enterInGame(response.data.data.data._id))
-          //   dispatch(enterInGame(response.data.data.data._id))
-          //   console.log('id game----', response.data.data.data._id)
-          //   dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.data.question }))
-          // })
-          // .catch(err => {
-          //   dispatch(error(err))
-          // })
+          axios.get('https://cfe485a0.ngrok.io/games/quiz')
+          .then(response => {
+            console.log('masuk game', response)
+            // dispatch(enterInGame(response.data.data.data._id))
+            dispatch(enterInGame(response.data.data.data._id))
+            console.log('id game----', response.data.data.data._id)
+            dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.data.question }))
+          })
+          .catch(err => {
+            dispatch(error(err))
+          })
         } else if (replyFromYupi.data === 'BZIMI2J4MLIFAHNWMW520JU8D') {
           dispatch(getReplySuccess(replyFromYupi))
           // main game tebak kata
