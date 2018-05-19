@@ -17,6 +17,7 @@ import Tts from 'react-native-tts';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { getReply } from '../store/chat/chat.actions'
+import LoadingHome from '../components/LoadingHome'
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -64,7 +65,7 @@ class HomeScreen extends Component {
   
   render() {
     if(this.props.loading) {
-      return <View><Text>Yupi is typing...</Text></View>
+      return <LoadingHome/>
     } else {
       if(this.props.data.data) {
         Tts.speak(this.props.data.data)
