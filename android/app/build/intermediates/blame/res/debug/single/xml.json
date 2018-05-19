@@ -12,6 +12,10 @@
         "source": "/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
     },
     {
+        "merged": "/home/lupa/phase3/final/client/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/lupa/phase3/final/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
+    },
+    {
         "merged": "/home/lupa/phase3/client/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/home/lupa/phase3/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/xml/preferences.xml"
     }

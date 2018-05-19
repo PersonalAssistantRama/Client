@@ -24,7 +24,7 @@ export const getReply = (string) => {
   return dispatch => {
     console.log('masuk action', string)
 
-    axios.post('https://c3e1d703.ngrok.io/replies', {
+    axios.post('https://e596a609.ngrok.io/replies', {
       text: string
     })
       .then(response => {

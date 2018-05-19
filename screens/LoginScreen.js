@@ -45,8 +45,8 @@ class LoginScreen extends Component {
       <Container>
         <Content style={{paddingHorizontal:20}}>
         <Body style={{flexDirection:'row',justifyContent:'center'}}>
-          <Thumbnail 
-            source={require('../assets/img/both.png')}
+          <Thumbnail
+            source={require('../assets/img/marah.png')}
             style={{alignContent:'center',width: 100, height: 100}}
             />
             </Body>

@@ -16,6 +16,9 @@ import { bindActionCreators } from 'redux'
 import { getReply } from '../store/chat/chat.actions'
 
 class HomeScreen extends Component {
+  static navigationOptions = {
+    header: null,
+  }
   constructor() {
     super();
     this.state = {
@@ -33,27 +36,44 @@ class HomeScreen extends Component {
   }
 
   render() {
-
+    let emot = ''
+    if(this.props.data.emotion){
+      let parsing = this.props.data.emotion.split('.').pop()
+      if (parsing == 'marah'){
+        emot = require('../assets/img/marah.png')
+      }
+      else if(parsing == 'happy'){
+        emot = require('../assets/img/happy.png')
+      }
+      else if(parsing == 'tersipu'){
+        emot = require('../assets/img/tersipu.png')
+      }
+      else if(parsing == 'garing'){
+        emot = require('../assets/img/garing.png')
+      }
+      else{
+        emot = require('../assets/img/1.standby.png')
+      }
+    }else{
+      emot = require('../assets/img/1.standby.png')
+    }
     return (
       <View style={styles.container}>
         <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
 
-          <View style={{alignItems:'center', width:'100%'}}>
+          <View style={{alignItems:'center', width:'100%', height:100}}>
           {
-            this.props.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
+            this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
           }
           </View>
 
-          <View style={{alignItems:'center',marginTop:80}}>
-            {
-              this.props.data ?<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
-            :<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
-            }
+          <View style={{alignItems:'center'}}>
+            <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
           </View>
 
           <View style={{alignItems:'center',marginTop:30}}>
             {
-              this.props.data ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
+              this.state.question != '' ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
             }
           </View>
 
