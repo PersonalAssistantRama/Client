@@ -9,66 +9,53 @@ import axios from 'axios'
 import {Alert} from 'react-native'
 
 export const registerUser = (data) => {
-  return async dispatch => {
+  return dispatch => {
     dispatch(loading())
-    try {
-      const user = await axios({
+      axios({
         method: 'post',
         url: 'https://cfe485a0.ngrok.io/users/signup',
         data: data
+      }).then(response => {
+        dispatch(registerSuccess(user.data))
+      }).catch(error => {
+        dispatch(errorCheck())
       })
-      let token = user.data.token
-      // console.log('registeraction===', user.data)
-      await AsyncStorage.setItem('token', token)
-      dispatch(registerSuccess(user.data))
-    } catch (error) {
-      dispatch(errorCheck())
     }
-  }
+  
 }
 
 export const loginUser = (data) => {
-  return async dispatch => {
+  return dispatch => {
     dispatch(loading())
-    try {
-      const user = await axios({
+      axios({
         method: 'post',
         url: 'https://b18693e5.ngrok.io/users/signin',
         data: data
+      }).then(response => {
+        console.log('reslogin===', response)
+        dispatch(loginSuccess(response.data))
+      }).catch(error => {
+        console.log('action---', error)
+        dispatch(errorCheck())
       })
-      let token = user.data.token
-      await AsyncStorage.setItem('token', token)
-      this.props.navigation.navigate('Home')
-      dispatch(loginSuccess(user.data))
-    } catch (error) {
-      dispatch(errorCheck())
     }
-  }
 }
 
-const registerSuccess = (data) => {
-  return {
-    type: REGISTER_SUCCESS,
-    payload: data
-  }
-}
+const registerSuccess = (data) => ({
+  type: REGISTER_SUCCESS,
+  payload: data
+})
 
 
-const loginSuccess  = (data) => {
-  return {
-    type: LOGIN_SUCCESS,
-    payload: data
-  }
-}
+const loginSuccess  = (data) =>({
+  type: LOGIN_SUCCESS,
+  payload: data
+})
 
-const loading = () => {
-  return {
-    type: LOADING
-  }
-}
+const loading = () => ({
+  type: LOADING
+})
 
-const errorCheck = () => {
-  return {
-    type: ERROR
-  }
-}
+const errorCheck = () => ({
+  type: ERROR
+})
