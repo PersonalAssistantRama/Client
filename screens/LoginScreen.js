@@ -29,15 +29,19 @@ class LoginScreen extends Component {
     }
   }
 
-  loginButton = () => {
-    console.log(this.state.username)
+  loginButton = async () => {
+    // console.log(this.state.username)
     let user = {
       username: this.state.username,
       password: this.state.password
     }
-    this.props.loginUser(user)
-    Alert.alert('Login Succes')
+    await this.props.loginUser(user)
+    console.log("status===", this.props.user)
     this.props.navigation.navigate('Home')
+    // if(this.props.isLogin) {
+    // }else{
+    //   Alert.alert('Login failed!')
+    // }
   }
 
   render() {
@@ -45,8 +49,8 @@ class LoginScreen extends Component {
       <Container>
         <Content style={{paddingHorizontal:20}}>
         <Body style={{flexDirection:'row',justifyContent:'center'}}>
-          <Thumbnail 
-            source={require('../assets/img/both.png')}
+          <Thumbnail
+            source={require('../assets/img/marah.png')}
             style={{alignContent:'center',width: 100, height: 100}}
             />
             </Body>
@@ -111,7 +115,8 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state) => ({
-  user: state.user
+  user: state.user,
+  // isLogin: state.user.isLogin
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({

@@ -17,14 +17,19 @@ import Tts from 'react-native-tts';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { getReply, answerGame } from '../store/chat/chat.actions'
+import LoadingHome from '../components/LoadingHome'
 
 class HomeScreen extends Component {
+  static navigationOptions = {
+    header: null,
+  }
   constructor(props) {
-    super(props);
+    super();
     this.state = {
       text: '',
       question: '',
-      showText: null
+      showText: null,
+      audio: false
     };
 
     this.onSpeak = this.onSpeak.bind(this);
@@ -58,7 +63,8 @@ class HomeScreen extends Component {
         question: spokenText,
         text: spokenText,
       })
-      this.replyFromYupi();      
+      this.replyFromYupi();
+      this.state.audio=true
     } catch(error) {
       switch(error){
         case SpeechAndroid.E_VOICE_CANCELLED:
@@ -73,43 +79,64 @@ class HomeScreen extends Component {
       }
     }
   }
-  
+
   render() {
+    let emot = ''
+    if(this.props.data.emotion){
+      let parsing = this.props.data.emotion.split('.').pop()
+      console.log(parsing);
+      if (parsing == 'marah'){
+        emot = require('../assets/img/marah.png')
+      }
+      else if(parsing == 'happy'){
+        emot = require('../assets/img/happy.png')
+      }
+      else if(parsing == 'tersipu'){
+        emot = require('../assets/img/tersipu.png')
+      }
+      else if(parsing == 'garing'){
+        emot = require('../assets/img/garing.png')
+      }
+      else{
+        emot = require('../assets/img/standby.png')
+      }
+    }else{
+      emot = require('../assets/img/standby.png')
+    }
+
     if(this.props.loading) {
-      return <View><Text>Yupi is typing...</Text></View>
+      return <LoadingHome/>
     } else {
-      if(this.props.data.data) {
+      if(this.state.audio) {
         Tts.speak(this.props.data.data)
+        this.state.audio = false
       }
       return (
         <View style={styles.container}>
           <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
             <View style={{alignItems:'center', width:'100%'}}>
             {
-              this.props.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
+              this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
             }
             </View>
-  
+
             <View style={{alignItems:'center',marginTop:80}}>
-              {
-                this.props.data ?<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
-              :<Image source={require('../assets/img/1.standby.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
-              }
+              <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
             </View>
-  
+
             <View style={{alignItems:'center',marginTop:30}}>
               {
-                this.props.data ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
+                this.state.question != '' ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
               }
             </View>
-  
+
             <View style={styles.instructions}>
               <TextInput
                 placeholder="What you think?"
                 placeholderTextColor="grey"
                 onChangeText={(text) => this.setState({text})}
                 onSubmitEditing={(event) => this.replyFromYupi()}
-                style={{height: 40, borderColor: 'gray', borderWidth: 1,width:'80%', backgroundColor:'white'}}
+                style={styles.inputdata}
               />
             {
               this.state.text ?
@@ -119,13 +146,11 @@ class HomeScreen extends Component {
                     title="send"
                     />
                 </View>:
-                <View style={{width:'20%'}}>
-                  <TouchableHighlight onPress={this.onSpeak} style={{alignItems:'center'}}>
+                  <TouchableHighlight onPress={this.onSpeak} style={styles.voice} underlayColor="#aaa">
                     <View>
                         <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
                     </View>
                   </TouchableHighlight>
-                </View>
             }
             </View>
           </ImageBackground>
@@ -144,6 +169,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F5FCFF',
+  },
+  inputdata :{
+    height: 40,
+    width:'80%',
+    backgroundColor:'white'
+  },
+  voice : {
+    width:'20%',
+    alignItems:'center',
+    padding: 3,
+    backgroundColor:'#5592f4'
   },
   instructions: {
     position: 'absolute',

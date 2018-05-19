@@ -58,7 +58,7 @@ export const answerGame = (id, answer) => {
 export const getReply = (string) => {
   return dispatch => {
     dispatch(loading());
-    axios.post('https://cfe485a0.ngrok.io/replies', {
+    axios.post('https://e596a609.ngrok.io/replies', {
       text: string
     })
       .then(response => {
