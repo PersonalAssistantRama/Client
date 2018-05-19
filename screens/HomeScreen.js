@@ -16,7 +16,7 @@ import Tts from 'react-native-tts';
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { getReply } from '../store/chat/chat.actions'
+import { getReply, answerGame } from '../store/chat/chat.actions'
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -37,6 +37,24 @@ class HomeScreen extends Component {
       question: yourquestion,
       text: ''
     })
+    // if(this.props.inGame) {
+    //   console.log('masuk reply from yupi in game')
+    //   console.log('id game', this.state.idGame),
+    //   console.log('jawaban', this.state.text)
+    //   this.props.answerGame(this.state.idGame, this.state.text)
+    //   this.setState({
+    //     question: yourquestion,
+    //     text: ''
+    //   })
+    // } else {
+    //   console.log('masuk reply from yupi else')
+    //   let yourquestion = this.state.text
+    //   this.props.getReply(this.state.text)
+    //   this.setState({
+    //     question: yourquestion,
+    //     text: ''
+    //   })
+    // }
   }
 
   async onSpeak() {
@@ -161,11 +179,13 @@ const styles = StyleSheet.create({
 const mapStateToProps = (state) => ({
   data: state.data.data,
   loading: state.data.loading,
-  error: state.data.error
+  error: state.data.error,
+  // inGame: state.data.inGame,
+  // idGame: state.data.idGame,
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  getReply,
+  getReply, answerGame
 }, dispatch)
 
 export default connect(

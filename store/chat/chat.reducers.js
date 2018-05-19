@@ -1,7 +1,9 @@
 import {
   GET_REPLY_LOADING,
   GET_REPLY_ERROR,
-  GET_REPLY_SUCCESS
+  GET_REPLY_SUCCESS,
+  SET_INGAME_MODE,
+  SET_NOT_INGAME_MODE,
 } from './chat.actionsTypes'
 
 const initialState = {
@@ -10,7 +12,9 @@ const initialState = {
   error: {
     status: false,
     message: ''
-  }
+  },
+  inGame: false,
+  idGame: 'a'
 }
 
 const reducers = (state = {...initialState} , action) => {
@@ -39,6 +43,19 @@ const reducers = (state = {...initialState} , action) => {
         ...state,
         data: action.payload,
         loading: false
+      }
+
+    case SET_INGAME_MODE:
+      return {
+        ...state,
+        idGame: action.payload,
+        inGame: true,
+      }
+    
+    case SET_NOT_INGAME_MODE:
+      return {
+        ...state,
+        inGame: false,
       }
 
     default:
