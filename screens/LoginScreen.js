@@ -37,11 +37,11 @@ class LoginScreen extends Component {
     }
     await this.props.loginUser(user)
     console.log("status===", this.props.user)
-    this.props.navigation.navigate('Home')
-    // if(this.props.isLogin) {
-    // }else{
-    //   Alert.alert('Login failed!')
-    // }
+    if(this.props.user.isLogin) {
+      this.props.navigation.navigate('Home')
+    }else{
+      Alert.alert('Login failed!')
+    }
   }
 
   render() {
@@ -115,8 +115,7 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state) => ({
-  user: state.user,
-  // isLogin: state.user.isLogin
+  user: state.user
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
