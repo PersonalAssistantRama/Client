@@ -47,7 +47,6 @@ class SignUpScreen extends Component {
     }
 
     this.props.registerUser(newUser)
-    Alert.alert('Register Succes')
     this.props.navigation.navigate('Home')
   }
 

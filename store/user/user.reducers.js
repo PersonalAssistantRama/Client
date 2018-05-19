@@ -7,6 +7,7 @@ import {
 
 const initalState = {
   data: {},
+  isLogin: false,
   loading: false,
   error: false
 }
@@ -16,12 +17,14 @@ const reducers = (state={...initialState}, action) => {
     case REGISTER_SUCCESS:
     return ({
       ...state,
+      isLogin: true,
       data: action.payload,
       loading: false
     })
     case LOGIN_SUCCESS:
     return ({
       ...state,
+      isLogin: true,
       data: action.payload,
       loading: false
     })
@@ -34,6 +37,7 @@ const reducers = (state={...initialState}, action) => {
     return({
       ...state,
       error: true,
+      isLogin: false,
       loading: false
     })
     default:
