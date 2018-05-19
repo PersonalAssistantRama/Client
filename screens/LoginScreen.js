@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state) => ({
-  user: state.user.data,
+  user: state.user,
   // isLogin: state.user.isLogin
 })
 
