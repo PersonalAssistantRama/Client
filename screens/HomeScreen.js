@@ -16,7 +16,7 @@ import Tts from 'react-native-tts';
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { getReply } from '../store/chat/chat.actions'
+import { getReply, answerGame } from '../store/chat/chat.actions'
 import LoadingHome from '../components/LoadingHome'
 
 class HomeScreen extends Component {
@@ -36,12 +36,24 @@ class HomeScreen extends Component {
   }
 
   replyFromYupi() {
-    let yourquestion = this.state.text
-    this.props.getReply(this.state.text)
-    this.setState({
-      question: yourquestion,
-      text: ''
-    })
+    if(this.props.inGame) {
+      console.log('masuk reply from yupi in game')
+      console.log('id game', this.props.idGame),
+      console.log('jawaban', this.state.text)
+      this.props.answerGame(this.props.idGame, this.state.text)
+      this.setState({
+        question: this.state.text,
+        text: ''
+      })
+    } else {
+      console.log('masuk reply from yupi else')
+      let yourquestion = this.state.text
+      this.props.getReply(this.state.text)
+      this.setState({
+        question: yourquestion,
+        text: ''
+      })
+    }
   }
 
   async onSpeak() {
@@ -102,7 +114,6 @@ class HomeScreen extends Component {
       return (
         <View style={styles.container}>
           <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
-
             <View style={{alignItems:'center', width:'100%'}}>
             {
               this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
@@ -195,13 +206,16 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = (state) => ({
+  dataUtama: state.data,
   data: state.data.data,
   loading: state.data.loading,
-  error: state.data.error
+  error: state.data.error,
+  inGame: state.data.inGame,
+  idGame: state.data.idGame,
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  getReply,
+  getReply, answerGame
 }, dispatch)
 
 export default connect(
