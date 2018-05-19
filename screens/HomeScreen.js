@@ -90,7 +90,7 @@ class HomeScreen extends Component {
     }
 
     if(this.props.loading) {
-      let load = <View><Text>Yupi is typing...</Text></View>
+      return (<View><Text>Yupi is typing...</Text></View>)
     } else {
       if(this.props.data.data) {
         Tts.speak(this.props.data.data)
