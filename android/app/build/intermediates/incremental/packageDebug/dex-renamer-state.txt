@@ -1,4 +1,4 @@
-#Fri May 18 20:15:34 WIB 2018
-base.0=/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sat May 19 11:25:57 WIB 2018
+base.0=/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

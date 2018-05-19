@@ -14,7 +14,7 @@ export const registerUser = (data) => {
     try {
       const user = await axios({
         method: 'post',
-        url: 'https://d13e22df.ngrok.io/users/signup',
+        url: 'https://b18693e5.ngrok.io/users/signup',
         data: data
       })
       let token = user.data.token
@@ -33,11 +33,12 @@ export const loginUser = (data) => {
     try {
       const user = await axios({
         method: 'post',
-        url: 'https://16ed310f.ngrok.io/users/signin',
+        url: 'https://b18693e5.ngrok.io/users/signin',
         data: data
       })
       let token = user.data.token
       await AsyncStorage.setItem('token', token)
+      this.props.navigation.navigate('Home')
       dispatch(loginSuccess(user.data))
     } catch (error) {
       dispatch(errorCheck())
