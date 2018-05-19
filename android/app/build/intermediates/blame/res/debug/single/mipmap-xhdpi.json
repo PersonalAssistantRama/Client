@@ -8,6 +8,10 @@
         "source": "/home/lupa/phase3/client/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/lupa/phase3/final/client/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/lupa/phase3/final/client/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
         "source": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },

@@ -23,7 +23,7 @@ const getReplySuccess = (payload) => ({
 export const getReply = (string) => {
   return dispatch => {
     dispatch(loading());
-    axios.post('https://d13e22df.ngrok.io/replies', {
+    axios.post('https://e596a609.ngrok.io/replies', {
       text: string
     })
       .then(response => {
