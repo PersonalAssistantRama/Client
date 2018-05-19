@@ -18,6 +18,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { getReply, answerGame } from '../store/chat/chat.actions'
 import LoadingHome from '../components/LoadingHome'
+import MovieComponent from '../components/MovieComponent'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -120,7 +121,7 @@ class HomeScreen extends Component {
             }
             </View>
 
-            <View style={{alignItems:'center',marginTop:80}}>
+            <View style={{alignItems:'center',marginTop:0}}>
               <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
             </View>
 
@@ -162,9 +163,9 @@ class HomeScreen extends Component {
 
 const styles = StyleSheet.create({
   backgroundImage: {
-       flex: 1,
-       width: null,
-       height: null
+    flex: 1,
+    width: null,
+    height: null
    },
   container: {
     flex: 1,
