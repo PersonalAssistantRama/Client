@@ -29,7 +29,7 @@ export const loginUser = (data) => {
     try {
       const user = await axios({
         method: 'post',
-        url: 'https://6b9d6b89.ngrok.io/users/signin',
+        url: 'https://bed73cfa.ngrok.io/users/signin',
         data: data
       })
       dispatch(loginSuccess(user.data))

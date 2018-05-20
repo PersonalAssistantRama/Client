@@ -4,6 +4,10 @@
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/lupa/phase3/yupi/yupi1/client/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/lupa/phase3/client/client/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/lupa/phase3/client/client/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
