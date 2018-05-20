@@ -21,6 +21,9 @@ import { Container,
   Body} from 'native-base';
 
 class LoginScreen extends Component {
+  static navigationOptions = {
+    header: null,
+  }
   constructor () {
     super()
     this.state ={

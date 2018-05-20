@@ -24,7 +24,7 @@ import MovieComponent from '../components/MovieComponent'
 
 class HomeScreen extends Component {
   static navigationOptions = {
-    header: null,
+    headerLeft: null,
   }
   constructor(props) {
     super();
