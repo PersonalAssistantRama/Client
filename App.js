@@ -34,6 +34,11 @@ const custom = (prop) => {
   )
 }
 
+const MainScreen = createStackNavigator({
+  Home: {
+    screen: HomeScreen
+  }
+})
 
 const RootStack = createStackNavigator({
   Login: {
