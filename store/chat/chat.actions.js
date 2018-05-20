@@ -46,7 +46,7 @@ const changeFoodStatus = (payload) => ({
 export const answerGame = (id, answer) => {
   return dispatch => {
     console.log('masok pokoknya', id + '==', answer)
-    axios.post('https://4a0bacf2.ngrok.io/games/quiz', {
+    axios.post('https://a3a561ee.ngrok.io/games/quiz', {
       id, answer
     })
       .then(response => {
@@ -70,7 +70,7 @@ export const answerGame = (id, answer) => {
 export const getReply = (string) => {
   return dispatch => {
     dispatch(loading());
-    axios.post('https://18c2d15e.ngrok.io/replies', {
+    axios.post('https://a3a561ee.ngrok.io/replies', {
       text: string
     })
       .then(response => {
@@ -108,7 +108,7 @@ export const getReply = (string) => {
 
         } else if (replyFromYupi.data === 'J972JNMOQUEMZ29582MJWIEJW') {
           // main game quiz
-          axios.get('https://4a0bacf2.ngrok.io/games/quiz')
+          axios.get('https://a3a561ee.ngrok.io/games/quiz')
           .then(response => {
             console.log('masuk game', response)
             // dispatch(enterInGame(response.data.data.data._id))

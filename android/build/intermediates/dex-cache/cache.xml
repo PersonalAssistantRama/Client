@@ -3,6 +3,24 @@
 
     <item
         is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_24701819aef32449f6563e3c3ef129fe636e6893.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_1f8deda3f92535e100c02b16c5c52caa67e95fe0.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/exploded-aar/client/react-native-tts/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -39,12 +57,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_788780162fcdd4ed8e4e673bcfe57a4c3d3d22ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
         <dex dex="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_3673247c6fe91bbfc4a09726c3f9930abb37c257.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_498f262cf846acf824778195320e67df2facb856.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,12 +93,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_6aecec39ec030ead9949b386ac232da00dca3208.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
         <dex dex="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_4079d9b511cd63b7c5ee983034d183a307617e69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_876c508391fbb4f96ec2c446e698370145a9540b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -81,6 +135,15 @@
         revision="23.0.1"
         sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
         <dex dex="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_6266d52e7a900a277c3c15ba3d172fcb5e4db559.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_2e665f253429dcc03952722f2c076dfb01c8134e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,12 +174,84 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_fd48267f1b441f8e42cc0c861117d0f1f19ce97a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_1e79a393e37cf64bcec61e993f4fc6074702bcd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_862ac5567830e9dfed89888a7016795473f11883.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/client/react-native-tts/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="06fd03d1c01264fbc7a460026b6ff7eaf589a2f4">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-tts-unspecified_783ec990177549f497ce56510e95f9bae8b870dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_73cbb3a5ee10af5d6afe4ac33f36e74d4cfe5032.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_00e3e55263aa8764a08322105436d07983570f63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/client/VoiceModule/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1c37d3c23ab00122715933a5908aa4134859877d">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/client-VoiceModule-unspecified_d143bc689b218c8a1f69d85c161f3319e8b1486a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
         <dex dex="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_508fc386759eae91d2638ba06b46aac5bcff348d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_51d7e5f0e6452a0ef8983bf0661a7674208f4fe7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -183,6 +318,33 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/client/react-native-spinkit/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c6f49f2a5006caf994c7590fd3824c93943da6d7">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-spinkit-unspecified_953690b8f9606c3ed9d6d8bff92b2702b7dc02ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_c00b4ee4326cea019d7d5ec9d5a418dc4ceec646.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_aed97b257de2d040cbc6fec76d6073e0366e45a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -207,6 +369,15 @@
         revision="23.0.1"
         sha1="8f615bca00639150c9eb6175d4b5471193f70794">
         <dex dex="/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_362e47d18bf1bcf455485c009ec80db251d94fc9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_fcf20a68f15ba7bb4bb2b1bff7e4133d207f5500.jar" />
     </item>
     <item
         is-multidex="false"
