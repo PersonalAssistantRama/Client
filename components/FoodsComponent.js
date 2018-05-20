@@ -22,7 +22,7 @@ class FoodsComponent extends Component {
   getFoods = () => {
     axios({
       method: 'get',
-      url: `https://4a0bacf2.ngrok.io/foods`
+      url: `http://35.198.243.108/foods`
     }).then(response => {
       console.log("response===", response.data.data)
       this.setState({
