@@ -108,6 +108,12 @@ class HomeScreen extends Component {
       else{
         emot = require('../assets/img/standby.png')
       }
+    }
+    else if(this.props.data.data == 'Tebakan kamu benar!'){
+      emot = require('../assets/img/happy.png')
+    }
+    else if(this.props.data.data == 'Tebakan kamu salah, Payah nih!'){
+      emot = require('../assets/img/garing.png')
     }else{
       emot = require('../assets/img/standby.png')
     }

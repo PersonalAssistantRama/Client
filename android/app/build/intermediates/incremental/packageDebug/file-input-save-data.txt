@@ -524,7 +524,7 @@
 75.base=/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/res/resources-debug.ap_
 258.file=/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/res/resources-debug.ap_/res/layout/dev_loading_view.xml
 87.set=ANDROID_RESOURCE
-338.set=ANDROID_RESOURCE
+338.set=NATIVE_RESOURCE
 10.set=ANDROID_RESOURCE
 292.base=/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/res/resources-debug.ap_
 122.base=/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/res/resources-debug.ap_
