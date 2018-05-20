@@ -25,7 +25,7 @@ import FoodsComponent from '../components/FoodsComponent'
 
 class HomeScreen extends Component {
   static navigationOptions = {
-    header: null,
+    headerLeft: null,
   }
   constructor(props) {
     super();
