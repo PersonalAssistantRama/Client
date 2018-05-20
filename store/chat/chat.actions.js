@@ -44,7 +44,7 @@ const changeFoodStatus = (payload) => ({
   payload
 })
 
-const baseUrl = 'https://4a0bacf2.ngrok.io'
+const baseUrl = 'http://35.198.243.108'
 
 export const answerGame = (id, answer) => {
   return dispatch => {

@@ -28,11 +28,11 @@ class MovieComponent extends Component {
   getMovie = () => {
     axios({
       method: 'get',
-      url: `https://4a0bacf2.ngrok.io/movies`
+      url: `http://35.198.243.108/movies`
     }).then(response => {
-      console.log("response===", response.data.data.data)
+      console.log("response===", response)
       this.setState({
-        data: response.data.data.data
+        data: response.data.data
       })
     })
     

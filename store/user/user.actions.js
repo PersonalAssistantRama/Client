@@ -6,7 +6,7 @@ import {
 } from './user.actionTypes'
 
 import axios from 'axios'
-const baseUrl = 'https://00c71489.ngrok.io'
+const baseUrl = 'http://35.198.243.108'
 
 export const registerUser = (data) => {
   return async dispatch => {
