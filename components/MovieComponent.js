@@ -28,7 +28,7 @@ class MovieComponent extends Component {
   getMovie = () => {
     axios({
       method: 'get',
-      url: `https://5b41de75.ngrok.io/movies`
+      url: `https://4a0bacf2.ngrok.io/movies`
     }).then(response => {
       console.log("response===", response.data.data.data)
       this.setState({

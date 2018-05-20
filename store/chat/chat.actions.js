@@ -6,7 +6,8 @@ import {
   GET_REPLY_SUCCESS,
   SET_INGAME_MODE,
   SET_NOT_INGAME_MODE,
-  SHOW_MOVIE_LIST
+  SHOW_MOVIE_LIST,
+  SHOW_FOODS_LIST
 } from './chat.actionsTypes';
 
 const loading = () => ({
@@ -37,10 +38,15 @@ const changeMovieStatus = (payload) => ({
   payload
 })
 
+const changeFoodStatus = (payload) => ({
+  type: SHOW_FOODS_LIST,
+  payload
+})
+
 export const answerGame = (id, answer) => {
   return dispatch => {
     console.log('masok pokoknya', id + '==', answer)
-    axios.post('https://cfe485a0.ngrok.io/games/quiz', {
+    axios.post('https://4a0bacf2.ngrok.io/games/quiz', {
       id, answer
     })
       .then(response => {
@@ -64,7 +70,7 @@ export const answerGame = (id, answer) => {
 export const getReply = (string) => {
   return dispatch => {
     dispatch(loading());
-    axios.post('https://5b41de75.ngrok.io/replies', {
+    axios.post('https://4a0bacf2.ngrok.io/replies', {
       text: string
     })
       .then(response => {
@@ -84,22 +90,25 @@ export const getReply = (string) => {
           // })
           dispatch(getReplySuccess({data: 'Film yang Yupi rekomendasiin buat kamu:'}))
           dispatch(changeMovieStatus(true))
+          dispatch(changeFoodStatus(false))
         } else if (replyFromYupi.data == 'IWJFDXNC6YWEJ235HKMWJDIWE') {
           let foodReply = "Makanan yang Yupi rekomendasiin buat kamu: "
-          axios.get('https://cfe485a0.ngrok.io/foods')
-          .then(response => {
-            response.data.data.data.map(food => {
-              foodReply = foodReply + " " + food.restaurant.name
-            })
+          // axios.get('https://4a0bacf2.ngrok.io/foods')
+          // .then(response => {
+          //   response.data.data.data.map(food => {
+          //     foodReply = foodReply + " " + food.restaurant.name
+          //   })
+          // })
+          // .catch(err => {
+            //   dispatch(error(err))
+            // })
             dispatch(getReplySuccess({ data: foodReply }))
+            dispatch(changeFoodStatus(true))
             dispatch(changeMovieStatus(false))
-          })
-          .catch(err => {
-            dispatch(error(err))
-          })
+
         } else if (replyFromYupi.data === 'J972JNMOQUEMZ29582MJWIEJW') {
           // main game quiz
-          axios.get('https://cfe485a0.ngrok.io/games/quiz')
+          axios.get('https://4a0bacf2.ngrok.io/games/quiz')
           .then(response => {
             console.log('masuk game', response)
             // dispatch(enterInGame(response.data.data.data._id))
@@ -107,6 +116,7 @@ export const getReply = (string) => {
             console.log('id game----', response.data.data.data._id)
             dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.data.question }))
             dispatch(changeMovieStatus(false))
+            dispatch(changeFoodStatus(false))
           })
           .catch(err => {
             dispatch(error(err))
@@ -114,10 +124,12 @@ export const getReply = (string) => {
         } else if (replyFromYupi.data === 'BZIMI2J4MLIFAHNWMW520JU8D') {
           dispatch(getReplySuccess(replyFromYupi))
           dispatch(changeMovieStatus(false))
+          dispatch(changeFoodStatus(false))
           // main game tebak kata
         } else {
           dispatch(getReplySuccess(replyFromYupi))
           dispatch(changeMovieStatus(false))
+          dispatch(changeFoodStatus(false))
         }
       })
       .catch(err => {
