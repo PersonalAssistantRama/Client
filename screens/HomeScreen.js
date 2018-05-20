@@ -27,6 +27,8 @@ import FoodsComponent from '../components/FoodsComponent'
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment'
 
+import { localNotificationSchedule } from '../services/pushNotifications'
+
 class HomeScreen extends Component {
   static navigationOptions = {
     headerLeft: null,
@@ -51,9 +53,14 @@ class HomeScreen extends Component {
 
   _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
   _handleDatePicked = (date) => {
-    let datetime = moment(date).format('L').split('/').reverse().join('/')+' '+moment(date).format('h:mm')
+  // let date = moment(date).format('L').split('/').reverse().join('/');
+  // moment.locale();
+  // let time = moment(date).format('LT')
+  // let datetime = date + ' ' + time 
 
-    this.setState({ showdatetime:  datetime})
+  let datetime = moment(date).format()
+
+  this.setState({ showdatetime:  datetime})
    this._hideDateTimePicker();
  };
 
@@ -108,6 +115,16 @@ class HomeScreen extends Component {
   }
 
   setModalVisible(visible) {
+    const objNotif = {
+      title: this.state.titlepengingat,
+      message: this.state.deskripsipengingat,
+      date: this.state.showdatetime
+    }
+
+    console.log('objnotif', objNotif)
+
+    localNotificationSchedule(objNotif);
+
     this.props.setYupiAnswer('Ok, nanti Yupi ingatkan ya!');
     this.setState({
       modalVisible: visible,
