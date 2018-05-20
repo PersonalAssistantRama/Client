@@ -4,7 +4,8 @@ import {
   GET_REPLY_SUCCESS,
   SET_INGAME_MODE,
   SET_NOT_INGAME_MODE,
-  SHOW_MOVIE_LIST
+  SHOW_MOVIE_LIST,
+  SHOW_FOODS_LIST
 } from './chat.actionsTypes'
 
 const initialState = {
@@ -16,7 +17,8 @@ const initialState = {
     message: ''
   },
   inGame: false,
-  movies: false
+  movies: false,
+  foods: false
 }
 
 const reducers = (state = {...initialState} , action) => {
@@ -67,6 +69,12 @@ const reducers = (state = {...initialState} , action) => {
       return {
         ...state,
         movies: action.payload
+      }
+      
+      case SHOW_FOODS_LIST:
+      return {
+        ...state,
+        foods: action.payload
       }
 
     default:

@@ -6,6 +6,7 @@ import {
 } from './user.actionTypes'
 
 import axios from 'axios'
+const baseUrl = 'https://00c71489.ngrok.io'
 
 export const registerUser = (data) => {
   return async dispatch => {
@@ -13,7 +14,7 @@ export const registerUser = (data) => {
     try {
       const user = await axios({
         method: 'post',
-        url: 'https://6b9d6b89.ngrok.io/users/signup',
+        url: `${baseUrl}/users/signup`,
         data: data
       })
       dispatch(registerSuccess(user.data))
@@ -29,7 +30,7 @@ export const loginUser = (data) => {
     try {
       const user = await axios({
         method: 'post',
-        url: 'https://bed73cfa.ngrok.io/users/signin',
+        url: `${baseUrl}/users/signin`,
         data: data
       })
       dispatch(loginSuccess(user.data))

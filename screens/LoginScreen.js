@@ -48,54 +48,57 @@ class LoginScreen extends Component {
   }
 
   render() {
-    return (
-      <Container>
-        <Content style={{paddingHorizontal:20}}>
-        <Body style={{flexDirection:'row',justifyContent:'center'}}>
-          <Thumbnail
-            source={require('../assets/img/marah.png')}
-            style={{alignContent:'center',width: 100, height: 100}}
-            />
+    if(this.props.user.isLogin) {
+      this.props.navigation.navigate('Home')
+    }
+      return (
+        <Container>
+          <Content style={{paddingHorizontal:20}}>
+          <Body style={{flexDirection:'row',justifyContent:'center'}}>
+            <Thumbnail
+              source={require('../assets/img/marah.png')}
+              style={{alignContent:'center',width: 100, height: 100}}
+              />
+              </Body>
+            <Text style={styles.title}>Yupi - Your Personal Assistant</Text>
+            <Form style={{paddingVertical:30}}>
+              <Item fixedLabel last rounded style={ styles.questionForm }>
+                <Label>Username</Label>
+                <Input
+                name="username"
+                autoCapitalize='none'
+                value={ this.state.username }
+                onChangeText={(username) => this.setState({username}) }/>
+              </Item>
+              <Item fixedLabel last rounded style={ styles.questionForm }>
+                <Label>Password</Label>
+                <Input
+                name="password"
+                autoCapitalize='none'
+                secureTextEntry={true}
+                value={ this.state.password }
+                onChangeText={(password) => this.setState({password}) }/>
+              </Item>
+            </Form>
+            <Body style={{flexDirection:'row',justifyContent:'center'}}>
+            <Button rounded success
+              onPress={()=>this.loginButton()}
+              >
+              <Text style={{textAlign: 'center'}}>Login</Text>
+            </Button>
             </Body>
-          <Text style={styles.title}>Yupi - Your Personal Assistant</Text>
-          <Form style={{paddingVertical:30}}>
-            <Item fixedLabel last rounded style={ styles.questionForm }>
-              <Label>Username</Label>
-              <Input
-              name="username"
-              autoCapitalize='none'
-              value={ this.state.username }
-              onChangeText={(username) => this.setState({username}) }/>
-            </Item>
-            <Item fixedLabel last rounded style={ styles.questionForm }>
-              <Label>Password</Label>
-              <Input
-              name="password"
-              autoCapitalize='none'
-              secureTextEntry={true}
-              value={ this.state.password }
-              onChangeText={(password) => this.setState({password}) }/>
-            </Item>
-          </Form>
-          <Body style={{flexDirection:'row',justifyContent:'center'}}>
-          <Button rounded success
-            onPress={()=>this.loginButton()}
-            >
-            <Text style={{textAlign: 'center'}}>Login</Text>
-          </Button>
-          </Body>
-          <Body style={{flexDirection:'row',justifyContent:'center'}}>
-          <Text style={{paddingVertical:5}}>Don't have an account?</Text>
-          <Button transparent
-            onPress={() => this.props.navigation.navigate('SignUp')}
-            >
-            <Text>SIGN UP</Text>
-          </Button>
-          </Body>
-        </Content>
-
-      </Container>
-    );
+            <Body style={{flexDirection:'row',justifyContent:'center'}}>
+            <Text style={{paddingVertical:5}}>Belum kenal Yupi?</Text>
+            <Button transparent
+              onPress={() => this.props.navigation.navigate('SignUp')}
+              >
+              <Text>Kenalan</Text>
+            </Button>
+            </Body>
+          </Content>
+  
+        </Container>
+      );
   }
 }
 

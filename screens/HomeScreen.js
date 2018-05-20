@@ -21,6 +21,7 @@ import { bindActionCreators } from 'redux'
 import { getReply, answerGame } from '../store/chat/chat.actions'
 import LoadingHome from '../components/LoadingHome'
 import MovieComponent from '../components/MovieComponent'
+import FoodsComponent from '../components/FoodsComponent'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -82,6 +83,10 @@ class HomeScreen extends Component {
       }
     }
   }
+  componentDidMount (){
+    console.log('food===', this.props.foods)
+    console.log('movies===', this.props.movies)
+  }
 
   render() {
     let emot = ''
@@ -125,6 +130,10 @@ class HomeScreen extends Component {
             }
             </View>
             { this.props.movies ? <MovieComponent/> : <Text></Text> }
+
+            {
+              this.props.foods ? <FoodsComponent/> : <Text></Text>
+            }
 
             <View style={{alignItems:'center',marginTop:0}}>
               <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
@@ -220,7 +229,8 @@ const mapStateToProps = (state) => ({
   error: state.data.error,
   inGame: state.data.inGame,
   idGame: state.data.idGame,
-  movies: state.data.movies
+  movies: state.data.movies,
+  foods: state.data.foods
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
