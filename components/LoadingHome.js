@@ -18,7 +18,7 @@ class LoadingHome extends Component {
             <Text style={{color: 'grey'}}>Yupi is thinking </Text><Spinner style={styles.spinner} isVisible={true} size={20} type="ThreeBounce" color="grey"/>
           </View>
         </View>
-        <View style={{alignItems:'center',marginTop:80}}>
+        <View style={{alignItems:'center',marginTop:0}}>
           <Image source={require('../assets/img/18.heran.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
         </View>
         </ImageBackground>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     height: null
   },
   both: {
-    marginTop:50,
+    margin:5,
     padding:10,
     width:'80%',
     borderRadius:3,
