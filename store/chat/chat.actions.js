@@ -9,6 +9,7 @@ import {
   SHOW_MOVIE_LIST,
   SHOW_FOODS_LIST
 } from './chat.actionsTypes';
+import { changeQuery } from '../helpers/index'
 
 const loading = () => ({
   type: GET_REPLY_LOADING
@@ -43,10 +44,12 @@ const changeFoodStatus = (payload) => ({
   payload
 })
 
+const baseUrl = 'http://35.198.243.108'
+
 export const answerGame = (id, answer) => {
   return dispatch => {
     console.log('masok pokoknya', id + '==', answer)
-    axios.post('https://a3a561ee.ngrok.io/games/quiz', {
+    axios.post(`${baseUrl}/games/quiz`, {
       id, answer
     })
       .then(response => {
@@ -74,13 +77,27 @@ export const setYupiAnswer = (data) => {
 }
 
 export const getReply = (string) => {
+  let input = changeQuery(string)
   return dispatch => {
     dispatch(loading());
-    axios.post('https://a3a561ee.ngrok.io/replies', {
-      text: string
+    // axios.post(`${baseUrl}/replies`, {
+    //   text: string
+    // })
+    axios({
+      method: 'get',
+      url: `https://api.dialogflow.com/v1/query?v=20170712&query=${input}&lang=id&sessionId=b18621cf-e981-4f93-b380-ee3fa6cf0b56&timezone=Asia/Jakarta`,
+      headers: {
+        Authorization: 'Bearer fe981391620d47929cc67a830ed75dab'
+      }
     })
-      .then(response => {
-        const replyFromYupi = response.data.data;
+      .then(responseApi => {
+        let response = {
+          data: responseApi.data.result.fulfillment.speech,
+          input: input,
+          emotion: responseApi.data.result.action
+        }
+        const replyFromYupi = response;
+        console.log('ini respon reply===', responseApi.data.result)
         if (replyFromYupi.data == 'DUJDS325UEWHCSZNCHSHSADHS') {
           // get movie
           // let movieReply = "Film yang Yupi rekomendasiin buat kamu: "
@@ -114,7 +131,7 @@ export const getReply = (string) => {
 
         } else if (replyFromYupi.data === 'J972JNMOQUEMZ29582MJWIEJW') {
           // main game quiz
-          axios.get('https://a3a561ee.ngrok.io/games/quiz')
+          axios.get(`${baseUrl}/games/quiz`)
           .then(response => {
             console.log('masuk game', response)
             // dispatch(enterInGame(response.data.data.data._id))
