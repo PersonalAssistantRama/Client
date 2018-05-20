@@ -6,11 +6,13 @@ import {
   View,
   TextInput,
   Button,
+  TouchableOpacity,
   ToastAndroid,
   Image,
   ImageBackground,
   TouchableHighlight,
-  ScrollView
+  ScrollView,
+  Modal
 } from 'react-native';
 import {Container} from 'native-base'
 import SpeechAndroid from 'react-native-android-voice';
@@ -18,10 +20,12 @@ import Tts from 'react-native-tts';
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { getReply, answerGame } from '../store/chat/chat.actions'
+import { getReply, answerGame, setYupiAnswer } from '../store/chat/chat.actions'
 import LoadingHome from '../components/LoadingHome'
 import MovieComponent from '../components/MovieComponent'
 import FoodsComponent from '../components/FoodsComponent'
+import DateTimePicker from 'react-native-modal-datetime-picker';
+import moment from 'moment'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -33,11 +37,26 @@ class HomeScreen extends Component {
       text: '',
       question: '',
       showText: null,
-      audio: false
+      audio: false,
+      isDateTimePickerVisible: false,
+      showdatetime: '',
+      modalVisible: true,
+      titlepengingat: '',
+      deskripsipengingat: ''
     };
 
     this.onSpeak = this.onSpeak.bind(this);
   }
+  _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
+
+  _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
+  _handleDatePicked = (date) => {
+    let datetime = moment(date).format('L').split('/').reverse().join('/')+' '+moment(date).format('h:mm')
+
+    this.setState({ showdatetime:  datetime})
+   this._hideDateTimePicker();
+ };
+
 
   replyFromYupi() {
     if(this.props.inGame) {
@@ -55,7 +74,7 @@ class HomeScreen extends Component {
       this.props.getReply(this.state.text)
       this.setState({
         question: yourquestion,
-        text: ''
+        text: '',
       })
     }
   }
@@ -88,6 +107,15 @@ class HomeScreen extends Component {
     console.log('movies===', this.props.movies)
   }
 
+  setModalVisible(visible) {
+    this.props.setYupiAnswer('Ok, nanti Yupi ingatkan ya!');
+    this.setState({
+      modalVisible: visible,
+    });
+    this.setState({
+      modalVisible: true,
+    });
+  }
   render() {
     let emot = ''
     if(this.props.data.emotion){
@@ -114,6 +142,9 @@ class HomeScreen extends Component {
     }
     else if(this.props.data.data == 'Tebakan kamu salah, Payah nih!'){
       emot = require('../assets/img/garing.png')
+    }
+    else if(this.props.data.data == 'Ok, apa yang mau saya ingatkan?'){
+      emot = require('../assets/img/garing.png')
     }else{
       emot = require('../assets/img/standby.png')
     }
@@ -139,6 +170,52 @@ class HomeScreen extends Component {
 
             {
               this.props.foods ? <FoodsComponent/> : <Text></Text>
+            }
+            {
+              this.props.data.data === 'Ok, apa yang mau saya ingatkan?' ? <Modal
+                  animationType="slide"
+                  transparent={true}
+                  visible={this.state.modalVisible}
+                  onRequestClose={() => this.setModalVisible(!this.state.modalVisible)}>
+                  <View style={{
+                    flex: 1,
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center'}}>
+                    <ScrollView>
+                      <View style={{width: 300,height: 300, backgroundColor:'rgba(255,255,255,0.8)',borderRadius:3,padding:10}}>
+                         <Button
+                           onPress={this._showDateTimePicker}
+                           title="masukan tanggal dan waktu"
+                         />
+                        <Text>{this.state.showdatetime}</Text>
+
+                         <DateTimePicker
+                           isVisible={this.state.isDateTimePickerVisible}
+                           onConfirm={this._handleDatePicked}
+                           onCancel={this._hideDateTimePicker}
+                           mode={'datetime'}
+                           is24Hour={true}
+                         />
+                         <TextInput
+                           placeholder="Apa yang ingin di ingatkan?"
+                           placeholderTextColor="grey"
+                           onChangeText={(deskripsipengingat) => this.setState({deskripsipengingat})}
+                         />
+
+                         <TextInput
+                           placeholder="deskripsi"
+                           placeholderTextColor="grey"
+                           onChangeText={(titlepengingat) => this.setState({titlepengingat})}
+                           />
+                        </View>
+                        <Button
+                          onPress={()=>this.setModalVisible(!this.state.modalVisible)}
+                          title="selesai"
+                          />
+                    </ScrollView>
+                </View>
+              </Modal>: <Text></Text>
             }
 
             <View style={{alignItems:'center',marginTop:0}}>
@@ -240,7 +317,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  getReply, answerGame
+  getReply, answerGame, setYupiAnswer
 }, dispatch)
 
 export default connect(

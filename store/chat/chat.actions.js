@@ -67,6 +67,12 @@ export const answerGame = (id, answer) => {
   }
 }
 
+export const setYupiAnswer = (data) => {
+  return dispatch => {
+    dispatch(getReplySuccess({data}))
+  }
+}
+
 export const getReply = (string) => {
   return dispatch => {
     dispatch(loading());
