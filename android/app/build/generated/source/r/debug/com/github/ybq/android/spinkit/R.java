@@ -9,25 +9,25 @@ package com.github.ybq.android.spinkit;
 public final class R {
 	public static final class attr {
 		public static final int SpinKitViewStyle = 0x7f010000;
-		public static final int SpinKit_Color = 0x7f0100d3;
-		public static final int SpinKit_Style = 0x7f0100d2;
+		public static final int SpinKit_Color = 0x7f0100d9;
+		public static final int SpinKit_Style = 0x7f0100d8;
 	}
 	public static final class id {
-		public static final int ChasingDots = 0x7f0d002b;
-		public static final int Circle = 0x7f0d002c;
-		public static final int CubeGrid = 0x7f0d002d;
-		public static final int DoubleBounce = 0x7f0d002e;
-		public static final int FadingCircle = 0x7f0d002f;
-		public static final int FoldingCube = 0x7f0d0030;
-		public static final int MultiplePulse = 0x7f0d0031;
-		public static final int MultiplePulseRing = 0x7f0d0032;
-		public static final int Pulse = 0x7f0d0033;
-		public static final int PulseRing = 0x7f0d0034;
-		public static final int RotatingCircle = 0x7f0d0035;
-		public static final int RotatingPlane = 0x7f0d0036;
-		public static final int ThreeBounce = 0x7f0d0037;
-		public static final int WanderingCubes = 0x7f0d0038;
-		public static final int Wave = 0x7f0d0039;
+		public static final int ChasingDots = 0x7f0d0033;
+		public static final int Circle = 0x7f0d0034;
+		public static final int CubeGrid = 0x7f0d0035;
+		public static final int DoubleBounce = 0x7f0d0036;
+		public static final int FadingCircle = 0x7f0d0037;
+		public static final int FoldingCube = 0x7f0d0038;
+		public static final int MultiplePulse = 0x7f0d0039;
+		public static final int MultiplePulseRing = 0x7f0d003a;
+		public static final int Pulse = 0x7f0d003b;
+		public static final int PulseRing = 0x7f0d003c;
+		public static final int RotatingCircle = 0x7f0d003d;
+		public static final int RotatingPlane = 0x7f0d003e;
+		public static final int ThreeBounce = 0x7f0d003f;
+		public static final int WanderingCubes = 0x7f0d0040;
+		public static final int Wave = 0x7f0d0041;
 	}
 	public static final class style {
 		public static final int SpinKitView = 0x7f0a00be;
@@ -80,7 +80,7 @@ public final class R {
 		public static final int SpinKitView_Wave = 0x7f0a00ed;
 	}
 	public static final class styleable {
-		public static final int[] SpinKitView = { 0x7f0100d2, 0x7f0100d3 };
+		public static final int[] SpinKitView = { 0x7f0100d8, 0x7f0100d9 };
 		public static final int SpinKitView_SpinKit_Color = 1;
 		public static final int SpinKitView_SpinKit_Style = 0;
 	}
