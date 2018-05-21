@@ -27,7 +27,6 @@ import MovieComponent from '../components/MovieComponent'
 import FoodsComponent from '../components/FoodsComponent'
 import DateTimePicker from 'react-native-modal-datetime-picker';
 
-
 import { localNotificationSchedule } from '../services/pushNotifications'
 
 class HomeScreen extends Component {
@@ -123,8 +122,6 @@ class HomeScreen extends Component {
       date: this.state.showdatetime
     }
 
-    console.log('objnotif', objNotif)
-
     localNotificationSchedule(objNotif);
 
     this.props.setYupiAnswer('Ok, nanti Yupi ingatkan ya!');
@@ -136,6 +133,7 @@ class HomeScreen extends Component {
     });
     this.state.audio = true
   }
+
   render() {
     let emot = ''
     if(this.props.data.emotion){
