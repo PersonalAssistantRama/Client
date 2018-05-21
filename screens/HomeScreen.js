@@ -26,9 +26,10 @@ import LoadingHome from '../components/LoadingHome'
 import MovieComponent from '../components/MovieComponent'
 import FoodsComponent from '../components/FoodsComponent'
 import DateTimePicker from 'react-native-modal-datetime-picker';
-
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
 import { localNotificationSchedule } from '../services/pushNotifications'
+// import BubbleText from 'react-native-message-bubble'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -183,7 +184,11 @@ class HomeScreen extends Component {
           <ScrollView>
             <View style={{flexGrow: 1,alignItems:'center',justifyContent:'center', width:'100%'}}>
             {
-              this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
+              this.props.data.data ? <View style={styles.both}><Text style={{fontSize:16}}>Yupi: " {this.props.data.data} "</Text></View>:<View style={styles.both}><Text style={{fontSize:16}}>Yupi: " Hai {this.props.users.user.username}, saya Yupi "</Text></View>
+            }
+
+            {
+              this.props.data.data? <View style={styles.triangle}></View> : <View style={styles.triangle}></View> 
             }
             </View>
             {
@@ -197,7 +202,6 @@ class HomeScreen extends Component {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center'}}>
-                    <ScrollView>
                       <View style={{width: 300,height: 300, backgroundColor:'rgba(255,255,255,0.8)',borderRadius:3,padding:10}}>
                          <Button
                            onPress={this._showDateTimePicker}
@@ -223,12 +227,11 @@ class HomeScreen extends Component {
                            placeholderTextColor="grey"
                            onChangeText={(titlepengingat) => this.setState({titlepengingat})}
                            />
-                        </View>
                         <Button
                           onPress={()=>this.setModalVisible(!this.state.modalVisible)}
                           title="selesai"
                           />
-                    </ScrollView>
+                        </View>
                 </View>
               </Modal>: <Text></Text>
             }
@@ -239,7 +242,10 @@ class HomeScreen extends Component {
 
             <View style={{flex: 1,alignItems:'center',justifyContent:'center',marginTop:30, paddingBottom:30}}>
               {
-                this.state.question != '' ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
+                this.state.question != '' ? <Text style={styles.user}>{this.props.users.user.username}: " {this.state.question} "</Text>:<Text></Text>
+              }
+              {
+                this.state.question != '' ? <View style={styles.triangleQuestion}></View> : <Text></Text>
               }
             </View>
               { this.props.movies ? <MovieComponent/> : <Text></Text> }
@@ -248,10 +254,8 @@ class HomeScreen extends Component {
                 this.props.foods ? <FoodsComponent/> : <Text></Text>
               }
             </ScrollView>
-
             <View style={styles.instructions}>
               <TextInput
-                placeholder="What you think?"
                 placeholderTextColor="grey"
                 underlineColorAndroid="rgba(0,0,0,0)"
                 onChangeText={(text) => this.setState({text})}
@@ -261,15 +265,17 @@ class HomeScreen extends Component {
             {
               this.state.text ?
               <View style={{width:'20%'}}>
-                <TouchableOpacity style={{ height: 40, backgroundColor:'#204E6D', justifyContent:'center'}}
+                <TouchableOpacity style={{ height: 40, backgroundColor:'#204E6D', justifyContent:'center', borderRadius:40, alignItems:'center', marginRight:10}}
                   onPress={()=>this.replyFromYupi()}
                 >
-                    <Text style={{color: 'white', textAlign: 'center', fontSize:15, fontWeight:'bold'}}>Send</Text>
+                    {/* <Text style={{color: 'white', textAlign: 'center', fontSize:15, fontWeight:'bold'}}> */}
+                      <Ionicons name='md-send' size={25} color='white'/>
+                    {/* </Text> */}
                 </TouchableOpacity>
             </View>:
-              <TouchableHighlight onPress={this.onSpeak} style={styles.voice} underlayColor="#aaa">
+              <TouchableHighlight onPress={this.onSpeak} style={styles.voice} underlayColor="rgba(255,255,255,0.2)">
                 <View>
-                    <Image source={require('../assets/img/audio-yupi.png')} style={{width: 35, height: 35}}/>
+                    <Image source={require('../assets/img/audio-yupi.png')} style={{width: 38, height: 38}}/>
                 </View>
               </TouchableHighlight>
             }
@@ -296,44 +302,100 @@ const styles = StyleSheet.create({
     height: 40,
     width:'80%',
     backgroundColor:'white',
-    opacity: 0.5
+    // opacity: 0.8,
+    borderWidth: 2,
+    borderColor: '#204E6D',
+    borderRadius: 18,
+    marginLeft:5,
+    marginRight:5,
+    marginBottom:10,
+    paddingLeft:10
+    
   },
   voice : {
     width:'20%',
-    alignItems:'center',
-    padding: 3,
-    backgroundColor:'white',
-    opacity: 0.5
+    // alignItems:'center',
+    borderRadius:50,
+    // justifyContent:'center'
+    paddingLeft: 10,
+    // backgroundColor:'white',
+    // opacity: 0.5
   },
   instructions: {
     position: 'absolute',
     flexDirection: 'row',
     left: 0,
     right: 0,
-    bottom: 0
+    bottom: 0,
+    // backgroundColor: 'white'
   },
   user: {
     margin:5,
+    marginBottom:0,
     padding:10,
-    borderRadius:3,
+    // borderRadius:3,
     color: 'white',
     backgroundColor:'#204E6D',
+    opacity: 0.8,
     height:60,
     width:'80%',
-    textAlign: 'center'
+    textAlign: 'center',
+    borderWidth: 1,
+    borderColor: '#204E6D',
+    // borderBottomLeftRadius: 25,
+    // borderTopRightRadius:20,
+    // borderTopLeftRadius: 25
+    borderRadius:10,
+    fontSize: 16
   },
   both: {
     margin:5,
-    paddingTop:10,
+    marginBottom:0,
+    // paddingTop:10,
     paddingLeft: 10,
     paddingRight: 10,
     width:'80%',
-    borderRadius:3,
-    color: 'grey',
+    // borderRadius:3,
+    // color: 'grey',
     backgroundColor:'white',
     height: 100,
-    // justifyContent:'center',
-    textAlign:'center'
+    justifyContent:'center',
+    alignItems:'center',
+    borderWidth: 1,
+    borderColor: 'white',
+    // borderBottomRightRadius: 10,
+    // borderTopRightRadius:10,
+    // borderTopLeftRadius: 10
+    borderRadius: 10
+  },
+  triangle: {
+    height: 0,
+    width: 0,
+    backgroundColor: 'transparent',
+    borderStyle: 'solid',
+    borderLeftWidth: 15,
+    borderRightWidth: 10,
+    borderTopWidth: 15,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderTopColor: 'white',
+    marginTop:0,
+    marginRight:50
+  },
+  triangleQuestion: {
+    height: 0,
+    width: 0,
+    backgroundColor: 'transparent',
+    borderStyle: 'solid',
+    borderLeftWidth: 15,
+    // borderRightWidth: 10,
+    borderTopWidth: 15,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderTopColor: '#204E6D',
+    marginTop:0,
+    marginLeft:200,
+    opacity: 0.8
   }
 });
 

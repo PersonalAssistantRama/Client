@@ -22,7 +22,7 @@ YellowBox.ignoreWarnings(
   "Warning: Can't call setState (or forceUpdate) on an unmounted component"]);
 
 
-const RootStack = createStackNavigator({
+const RootStack = createSwitchNavigator({
   Login: {
     screen: LoginScreen,
   },

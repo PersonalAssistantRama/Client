@@ -41,8 +41,7 @@ class SignUpScreen extends Component {
     headerTitle: 'Register',
     headerTintColor: '#fff',
     headerStyle: {
-      backgroundColor: '#204E6D',
-      justifyContent: 'center'
+      backgroundColor: '#204E6D'
     },
     headerTitleStyle: {
       textAlign: 'center'
