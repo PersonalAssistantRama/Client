@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
-  Image
+  Image,
+  ImageBackground
 } from 'react-native'
 
 import {connect} from 'react-redux'
@@ -53,15 +54,17 @@ class LoginScreen extends Component {
     }
       return (
         <Container>
-          <Content style={{paddingHorizontal:20}}>
-          <Body style={{flexDirection:'row',justifyContent:'center'}}>
+          <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
+          <Content style={{paddingHorizontal:20, marginTop:30}}>
+          <Text style={styles.title}>Yupi</Text>
+          <Body style={{flexDirection:'row',justifyContent:'center', marginTop:40}}>
             <Thumbnail
               source={require('../assets/img/marah.png')}
               style={{alignContent:'center',width: 100, height: 100}}
               />
               </Body>
-            <Text style={styles.title}>Yupi - Your Personal Assistant</Text>
-            <Form style={{paddingVertical:30}}>
+            <Text style={styles.tagline}>Your Personal Assistant</Text>
+            <Form style={{paddingVertical:0}}>
               <Item fixedLabel last rounded style={ styles.questionForm }>
                 <Label>Username</Label>
                 <Input
@@ -81,13 +84,13 @@ class LoginScreen extends Component {
               </Item>
             </Form>
             <Body style={{flexDirection:'row',justifyContent:'center'}}>
-            <Button rounded success
+            <Button rounded style={{marginTop:15, backgroundColor: '#204E6D'}}
               onPress={()=>this.loginButton()}
               >
               <Text style={{textAlign: 'center'}}>Login</Text>
             </Button>
             </Body>
-            <Body style={{flexDirection:'row',justifyContent:'center'}}>
+            <Body style={{flexDirection:'row',justifyContent:'center', marginTop:10}}>
             <Text style={{paddingVertical:5}}>Belum kenal Yupi?</Text>
             <Button transparent
               onPress={() => this.props.navigation.navigate('SignUp')}
@@ -96,7 +99,7 @@ class LoginScreen extends Component {
             </Button>
             </Body>
           </Content>
-  
+          </ImageBackground>
         </Container>
       );
   }
@@ -110,14 +113,25 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   questionForm: {
-    marginVertical:10,
+    marginBottom:10,
     backgroundColor:'white'
+  },
+  tagline: {
+    textAlign: 'center',
+    fontSize: 16,
+    paddingTop: 20,
+    paddingBottom: 20
   },
   title: {
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 50,
     paddingTop: 5
-  }
+  },
+  backgroundImage: {
+    flex: 1,
+    width: null,
+    height: null
+   },
 })
 
 const mapStateToProps = (state) => ({
