@@ -56,7 +56,7 @@ class HomeScreen extends Component {
   // let date = moment(date).format('L').split('/').reverse().join('/');
   // moment.locale();
   // let time = moment(date).format('LT')
-  // let datetime = date + ' ' + time 
+  // let datetime = date + ' ' + time
 
   let datetime = moment(date).format()
 
@@ -110,8 +110,9 @@ class HomeScreen extends Component {
     }
   }
   componentDidMount (){
-    console.log('food===', this.props.foods)
-    console.log('movies===', this.props.movies)
+    if (this.props.users){
+      Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
+    }
   }
 
   setModalVisible(visible) {
@@ -132,6 +133,7 @@ class HomeScreen extends Component {
     this.setState({
       modalVisible: true,
     });
+    this.state.audio = true
   }
   render() {
     let emot = ''
@@ -183,11 +185,13 @@ class HomeScreen extends Component {
               this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
             }
             </View>
+
             { this.props.movies ? <MovieComponent/> : <Text></Text> }
 
             {
               this.props.foods ? <FoodsComponent/> : <Text></Text>
             }
+
             {
               this.props.data.data === 'Ok, apa yang mau saya ingatkan?' ? <Modal
                   animationType="slide"
@@ -327,6 +331,7 @@ const mapStateToProps = (state) => ({
   data: state.data.data,
   loading: state.data.loading,
   error: state.data.error,
+  users: state.user.data.data,
   inGame: state.data.inGame,
   idGame: state.data.idGame,
   movies: state.data.movies,
