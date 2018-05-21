@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
-  ScrollView
+  ScrollView,
+  ImageBackground
 } from 'react-native'
 
 import {connect} from 'react-redux'
@@ -35,7 +36,18 @@ class SignUpScreen extends Component {
       last_name: '',
       gender: ''
     }
-  } 
+  }
+  static navigationOptions = ({
+    headerTitle: 'Register',
+    headerTintColor: '#fff',
+    headerStyle: {
+      backgroundColor: '#204E6D',
+      justifyContent: 'center'
+    },
+    headerTitleStyle: {
+      textAlign: 'center'
+    }
+  })
 
   SignUpButton = async () => {
     let newUser = {
@@ -58,9 +70,10 @@ class SignUpScreen extends Component {
   render() {
     return (
       <Container>
+        <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
         <Content style={{paddingHorizontal:20}}>
           <Form style={{paddingVertical:30}}>
-            <Item floatingLabel last style={ styles.questionForm }>
+            <Item rounded last style={ styles.questionForm }>
               <Label>Username</Label>
               <Input
               name="username"
@@ -68,7 +81,7 @@ class SignUpScreen extends Component {
               value={ this.state.username }
               onChangeText={(username) => this.setState({username}) }/>
             </Item>
-            <Item floatingLabel last style={ styles.questionForm }>
+            <Item rounded last style={ styles.questionForm }>
               <Label>Password</Label>
               <Input
               name="password"
@@ -77,7 +90,7 @@ class SignUpScreen extends Component {
               value={ this.state.password }
               onChangeText={(password) => this.setState({password}) }/>
             </Item>
-            <Item floatingLabel last style={ styles.questionForm }>
+            <Item rounded last style={ styles.questionForm }>
               <Label>First Name</Label>
               <Input
               name="first_name"
@@ -85,7 +98,7 @@ class SignUpScreen extends Component {
               value={ this.state.first_name }
               onChangeText={(first_name) => this.setState({first_name}) }/>
             </Item>
-            <Item floatingLabel last style={ styles.questionForm }>
+            <Item rounded last style={ styles.questionForm }>
               <Label>Last Name</Label>
               <Input
               name="last_name"
@@ -128,14 +141,15 @@ class SignUpScreen extends Component {
           </Content>
           </Form>
           <Body style={{flexDirection:'row',justifyContent:'center'}}>
-          <Button rounded success
+          <Button rounded
+            style={{backgroundColor:'#204E6D'}}
             onPress={()=>this.SignUpButton()}
             >
             <Text style={{textAlign: 'center'}}>Register</Text>
           </Button>
           </Body>
         </Content>
-
+        </ImageBackground>
       </Container>
     );
   }
@@ -161,12 +175,19 @@ const styles = StyleSheet.create({
   input: {
     width: 150,
     paddingLeft: 20,
-    paddingRight: 20
+    paddingRight: 20,
+    // backgroundColor: 'white',
   },
   questionForm: {
     marginVertical:10,
-    // backgroundColor:'white'
-  }
+    backgroundColor:'white',
+    // opacity: 0.5,
+  },
+  backgroundImage: {
+    flex: 1,
+    width: null,
+    height: null
+   },
 })
 
 const mapStateToProps = (state) => ({
