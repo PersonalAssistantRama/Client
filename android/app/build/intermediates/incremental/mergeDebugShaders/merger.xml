@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/src/debug/shaders"/></dataSet></merger>

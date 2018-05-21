@@ -1964,28 +1964,31 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int common_full_open_on_phone=0x7f02004b;
-        public static final int common_google_signin_btn_icon_dark=0x7f02004c;
-        public static final int common_google_signin_btn_icon_dark_focused=0x7f02004d;
-        public static final int common_google_signin_btn_icon_dark_normal=0x7f02004e;
-        public static final int common_google_signin_btn_icon_dark_normal_background=0x7f02004f;
-        public static final int common_google_signin_btn_icon_disabled=0x7f020050;
-        public static final int common_google_signin_btn_icon_light=0x7f020051;
-        public static final int common_google_signin_btn_icon_light_focused=0x7f020052;
-        public static final int common_google_signin_btn_icon_light_normal=0x7f020053;
-        public static final int common_google_signin_btn_icon_light_normal_background=0x7f020054;
-        public static final int common_google_signin_btn_text_dark=0x7f020055;
-        public static final int common_google_signin_btn_text_dark_focused=0x7f020056;
-        public static final int common_google_signin_btn_text_dark_normal=0x7f020057;
-        public static final int common_google_signin_btn_text_dark_normal_background=0x7f020058;
-        public static final int common_google_signin_btn_text_disabled=0x7f020059;
-        public static final int common_google_signin_btn_text_light=0x7f02005a;
-        public static final int common_google_signin_btn_text_light_focused=0x7f02005b;
-        public static final int common_google_signin_btn_text_light_normal=0x7f02005c;
-        public static final int common_google_signin_btn_text_light_normal_background=0x7f02005d;
-        public static final int googleg_disabled_color_18=0x7f02005e;
-        public static final int googleg_standard_color_18=0x7f02005f;
-        public static final int notification_template_icon_bg=0x7f020060;
+        public static final int chat_mine_bg=0x7f02004b;
+        public static final int chat_other_bg=0x7f02004c;
+        public static final int common_full_open_on_phone=0x7f02004d;
+        public static final int common_google_signin_btn_icon_dark=0x7f02004e;
+        public static final int common_google_signin_btn_icon_dark_focused=0x7f02004f;
+        public static final int common_google_signin_btn_icon_dark_normal=0x7f020050;
+        public static final int common_google_signin_btn_icon_dark_normal_background=0x7f020051;
+        public static final int common_google_signin_btn_icon_disabled=0x7f020052;
+        public static final int common_google_signin_btn_icon_light=0x7f020053;
+        public static final int common_google_signin_btn_icon_light_focused=0x7f020054;
+        public static final int common_google_signin_btn_icon_light_normal=0x7f020055;
+        public static final int common_google_signin_btn_icon_light_normal_background=0x7f020056;
+        public static final int common_google_signin_btn_text_dark=0x7f020057;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f020058;
+        public static final int common_google_signin_btn_text_dark_normal=0x7f020059;
+        public static final int common_google_signin_btn_text_dark_normal_background=0x7f02005a;
+        public static final int common_google_signin_btn_text_disabled=0x7f02005b;
+        public static final int common_google_signin_btn_text_light=0x7f02005c;
+        public static final int common_google_signin_btn_text_light_focused=0x7f02005d;
+        public static final int common_google_signin_btn_text_light_normal=0x7f02005e;
+        public static final int common_google_signin_btn_text_light_normal_background=0x7f02005f;
+        public static final int googleg_disabled_color_18=0x7f020060;
+        public static final int googleg_standard_color_18=0x7f020061;
+        public static final int ic_launcher=0x7f020062;
+        public static final int notification_template_icon_bg=0x7f020063;
     }
     public static final class id {
         public static final int ChasingDots=0x7f0d0033;
@@ -2178,6 +2181,7 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040027;
         public static final int select_dialog_singlechoice_material=0x7f040028;
         public static final int support_simple_spinner_dropdown_item=0x7f040029;
+        public static final int text_cell=0x7f04002a;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

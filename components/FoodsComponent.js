@@ -33,16 +33,16 @@ class FoodsComponent extends Component {
   }
   render() {
     return (
-      <View style={{height: 240, marginBottom:20}}>
+      <View style={{height: 240, marginBottom:35}}>
       <ScrollView horizontal>
       {
         this.state.data.map(value => (
           <View style={styles.listItem} key={value.restaurant.id}>
           <Image square
           source={{uri:value.restaurant.featured_image}}
-          style={{alignContent:'center',width: 150, height: 200}}
+          style={{alignContent:'center',width: 150, height: 200, borderRadius: 18}}
           />
-          <Text style={{fontSize: 14, width:150,textAlign:'center'}}>{value.restaurant.name}</Text>
+          <Text style={{fontSize: 14, width:150,textAlign:'center', color:'black'}}>{value.restaurant.name}</Text>
           </View>
         ))
       }
