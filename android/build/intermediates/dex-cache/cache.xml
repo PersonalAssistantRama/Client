@@ -3,7 +3,24 @@
 
     <item
         is-multidex="false"
-<<<<<<< HEAD
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_c9812475dee5ce3b74eabdba789eaa17978a09c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_b670b72cbe5f797a15352d004bdfd95d63f72c00.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -13,12 +30,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_daadb523bcce76c1117bf4150a1dedd32f2751f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_87b1253ab65e52fbc630d2a6207458fd0b428423.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
         <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_b2f31bb096ff8465005f9638725c2a9cad3c65fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_9c5080649e9fb8683a98e701705316586b8db889.jar" />
     </item>
     <item
         is-multidex="false"
@@ -37,6 +81,24 @@
         revision="23.0.1"
         sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
         <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_17ae1bfdcf4476e77a79032f94987b64bf695c2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_41d9bea3566e4ec2280324a92730f5bff8c49297.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/client/react-native-spinkit/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="066e01f3e13731eee328d793fd6263bc4c6f936f">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-spinkit-unspecified_16adea03d28c81296add5f727906e26efd3ece07.jar" />
     </item>
     <item
         is-multidex="false"
@@ -76,6 +138,33 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_22b68a6e82985b1fea5974e194dd26d5ac0eb343.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_360d7de05c9d176decf1f77386cd79b960a091d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_38cc0fb238998e1dddb01652bb173c23f77b464f.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -103,12 +192,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_ed4d03bb5c889ef9a697c158db7f1c1c00ac4e17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_21f6dfc5ac7ff91badf98c0e78902170f5590215.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_972fbef228926ce48d5fd0125094045e92521b5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
         <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.4_dab51d19ac7ba179b8ab01933be91d9fa32d3711.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_5cf0a222e79698ef534eff738bcf32ee41f60f03.jar" />
     </item>
     <item
         is-multidex="false"
@@ -127,6 +252,15 @@
         revision="23.0.1"
         sha1="adc3c860dddb3bde4822b72d27e6b4b5848fa31d">
         <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/client-VoiceModule-unspecified_966d3bedee6bc1a336b72d168ea1d5be6fb897ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_684ed1074827c0cf40eae5d0d7700d8822043d62.jar" />
     </item>
     <item
         is-multidex="false"
@@ -166,376 +300,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_93359dad75c09b9b2a3a739ff4ea5da21bc38336.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_a902ddecf6e097869aebcfeb7a299968e9d7042d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_c9812475dee5ce3b74eabdba789eaa17978a09c6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_b670b72cbe5f797a15352d004bdfd95d63f72c00.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_daadb523bcce76c1117bf4150a1dedd32f2751f6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-=======
-        jar="/home/lupa/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_45ea701498eac3735a44494e0a0a0e786a59569f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.4_3e193c4b9dcb6a01393eb5bd2e53f55c18c9169d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_1ec04fb30962b0308a3ea99525a1547e93bb1850.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_455c7ed0c508e7284f823c0e08d08b0ecd02d4c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_4fd7ec5e05c010e579888b003c2bf815b70acf69.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_1af4b22c36ceb5c1b6452e45d49f201134e6663f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_8228fdbc6315f0a0f89b232355cd7e062cd77c4c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_9dc1483498a2094af90ddba7a88a940aa81c8995.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_3673247c6fe91bbfc4a09726c3f9930abb37c257.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_b0d62f6ad3492a337d2cae91e66463362508281c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_11598757c1e6a54c37c3cbe48958a31a89429ce3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_f48e280bee2ae944ce4305f094735ee31c3468ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_0704bbce847ec8fa848d87a449b9f54b0faebbc7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/client/react-native-tts/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="06fd03d1c01264fbc7a460026b6ff7eaf589a2f4">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-tts-unspecified_1c55d57ddcefab2fd07d27c48d7244c02e5b8071.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_f1ffa3b84998a29e070a4728dc1a0d0ce45b4a64.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_b8b99a79d52c6817843a85d41a6fab5452265c1f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_6e3e808adc1ca5d3e49a9688900a7e82a4c9f983.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_19f80dc82d069b254ed6ea4d33181e013d44f28e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_1c1c3a873fefb108493c8140c63aeb9e1e885944.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_4754356e2e67e9af6e03b0871c14d7b447fdff3f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/client/react-native-spinkit/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c6f49f2a5006caf994c7590fd3824c93943da6d7">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-spinkit-unspecified_421a1b7bdb417b31baf556b1c0131241eecdb0c4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.0.4_0a0580ac2d24ca68144990143d1c25e905b4c3a3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_bb3f4df6530eab83c0e646367d61a436a98e1073.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
->>>>>>> development
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-<<<<<<< HEAD
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_87b1253ab65e52fbc630d2a6207458fd0b428423.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_9c5080649e9fb8683a98e701705316586b8db889.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_41d9bea3566e4ec2280324a92730f5bff8c49297.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/client/react-native-spinkit/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="066e01f3e13731eee328d793fd6263bc4c6f936f">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-spinkit-unspecified_16adea03d28c81296add5f727906e26efd3ece07.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_22b68a6e82985b1fea5974e194dd26d5ac0eb343.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_360d7de05c9d176decf1f77386cd79b960a091d1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_38cc0fb238998e1dddb01652bb173c23f77b464f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_ed4d03bb5c889ef9a697c158db7f1c1c00ac4e17.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_21f6dfc5ac7ff91badf98c0e78902170f5590215.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_972fbef228926ce48d5fd0125094045e92521b5f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_5cf0a222e79698ef534eff738bcf32ee41f60f03.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_684ed1074827c0cf40eae5d0d7700d8822043d62.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="8f615bca00639150c9eb6175d4b5471193f70794">
         <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_20592cb237eca8d1d1d50ce9d8fb53fdd35e073b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_93359dad75c09b9b2a3a739ff4ea5da21bc38336.jar" />
     </item>
     <item
         is-multidex="false"
@@ -554,135 +333,15 @@
         revision="23.0.1"
         sha1="8b6ccf92fc9172ebad10f1a5364e24c9c309d27b">
         <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-push-notification-unspecified_cf4a040640ea6f4bfd2a0966306b5558ed3bfafb.jar" />
-=======
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_857b0248ca5406329c52d740f1a0ea4ea7437723.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="531c33d3697000a05e9493a2d0f09ba41fa114d3">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.8_92054d100ffebcb498bbbe785e9f046d86fd79e6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_3e5be910aead03034a338eff30f461b2e243b80a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_a58ef9201cb3c1bf414e6045ee452bbdadce90fa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_7de965c5aa30017162e06d6de8c8a35082aef346.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_379732c1bcacc2580b75e03db9a7d17bbf703478.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_64d4664f25e0d70988705fa5c92e4d7cb108e7fa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/client/VoiceModule/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1c37d3c23ab00122715933a5908aa4134859877d">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/client-VoiceModule-unspecified_44a4edb7c807d87002ae4a34017c68263a682369.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_4220dfb75e33abe58ead45d21bbf1e173231be02.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/client/react-native-push-notification/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2516277bde138342f4ed05d15d64ba21639fad3f">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-push-notification-unspecified_1f4708a2d806b96dd5ae9ac10a39a16698061e03.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_746682188847bb42a473ae6f60463411f17dd374.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jar="/Users/Mac/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_dedb5765cd1f91c225713c12ace50187b7c03b65.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_d57d6673452e1f041ef118b234f42d9dfcf9ba7f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_b064646202cd5f1dbe703bd235daf20924ef54a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lupa/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_0540787de75fb6be82accbe5343b48de43da182b.jar" />
->>>>>>> development
+        <dex dex="/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_a902ddecf6e097869aebcfeb7a299968e9d7042d.jar" />
     </item>
 
 </items>

@@ -52,8 +52,6 @@ const RootStack = createStackNavigator({
   initialRouteName: "Splash"
 })
 
-
-
 class App extends React.Component {
   render() {
     return (

@@ -1,14 +1,13 @@
 import firebase from 'firebase'
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC60gliOEgrL7cDU6NorqOac0mnV8-Pm9g",
-    authDomain: "yupi-fdbf4.firebaseapp.com",
-    databaseURL: "https://yupi-fdbf4.firebaseio.com",
-    projectId: "yupi-fdbf4",
-    storageBucket: "yupi-fdbf4.appspot.com",
-    messagingSenderId: "247468678295"
-  };
-  firebase.initializeApp(config);
-  
+const config = {
+  apiKey: "AIzaSyBuzlxnyaF0GVp2BKY67dCvN1JybqppFvk",
+  authDomain: "yupi-alarm-feature.firebaseapp.com",
+  databaseURL: "https://yupi-alarm-feature.firebaseio.com",
+  projectId: "yupi-alarm-feature",
+  storageBucket: "yupi-alarm-feature.appspot.com",
+  messagingSenderId: "102567823802"
+};
+firebase.initializeApp(config);
+
 export const db = firebase.database()
