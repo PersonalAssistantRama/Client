@@ -3,6 +3,7 @@ package com.client;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 import net.no_mad.tts.TextToSpeechPackage;
 import com.facebook.react.ReactNativeHost;
@@ -26,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativePushNotificationPackage(),
             new RNSpinkitPackage(),
           new TextToSpeechPackage(),
           new VoicePackage()
