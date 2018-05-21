@@ -53,8 +53,8 @@ export const answerGame = (id, answer) => {
       id, answer
     })
       .then(response => {
-        console.log('response answer game', response.data.data.data.isCorrect)
-        const isCorrect = response.data.data.data.isCorrect;
+        console.log('response answer game', response.data.data.isCorrect)
+        const isCorrect = response.data.data.isCorrect;
         if(isCorrect) {
           console.log('benar!!!!')
           dispatch(getReplySuccess({ data: 'Tebakan kamu benar!'}))
@@ -135,9 +135,9 @@ export const getReply = (string) => {
           .then(response => {
             console.log('masuk game', response)
             // dispatch(enterInGame(response.data.data.data._id))
-            dispatch(enterInGame(response.data.data.data._id))
-            console.log('id game----', response.data.data.data._id)
-            dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.data.question }))
+            dispatch(enterInGame(response.data.data._id))
+            console.log('id game----', response.data.data._id)
+            dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.question }))
             dispatch(changeMovieStatus(false))
             dispatch(changeFoodStatus(false))
           })

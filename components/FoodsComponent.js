@@ -26,7 +26,7 @@ class FoodsComponent extends Component {
     }).then(response => {
       console.log("response===", response.data.data)
       this.setState({
-        data: response.data.data.data
+        data: response.data.data
       })
     })
     
