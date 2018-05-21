@@ -108,7 +108,7 @@ class SignUpScreen extends Component {
             </Item>
             <Content>
               <Label>Gender</Label>
-              <ListItem 
+              <ListItem
                 onPress={() => this.setState({gender: 'male'})}
                 selected={this.state.gender == 'male'}>
               <Left>
@@ -123,7 +123,7 @@ class SignUpScreen extends Component {
                 />
               </Right>
             </ListItem>
-            <ListItem 
+            <ListItem
               onPress={() => this.setState({gender: 'female'})}
               selected={this.state.gender == 'female'}>
               <Left>
