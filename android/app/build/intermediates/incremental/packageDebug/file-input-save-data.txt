@@ -355,7 +355,7 @@
 140.base=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 49.file=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/abc_dialog_title_material.xml
 409.set=ANDROID_RESOURCE
-392.set=ANDROID_RESOURCE
+392.set=NATIVE_RESOURCE
 36.set=ANDROID_RESOURCE
 50.base=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/resources-debug.ap_
 370.file=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
@@ -457,7 +457,7 @@
 433.set=ANDROID_RESOURCE
 402.base=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/resources-debug.ap_
 388.set=ANDROID_RESOURCE
-60.set=ANDROID_RESOURCE
+60.set=NATIVE_RESOURCE
 311.set=ANDROID_RESOURCE
 264.base=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/resources-debug.ap_
 111.file=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_checkbox.xml

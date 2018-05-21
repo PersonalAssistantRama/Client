@@ -84,8 +84,16 @@
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
         "merged": "/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png",
         "source": "/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
@@ -94,6 +102,10 @@
     {
         "merged": "/home/lupa/phase3/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "/home/lupa/phase3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
