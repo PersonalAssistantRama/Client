@@ -124,8 +124,6 @@ class HomeScreen extends Component {
       date: this.state.showdatetime
     }
 
-    console.log('objnotif', objNotif)
-
     localNotificationSchedule(objNotif);
 
     this.props.setYupiAnswer('Ok, nanti Yupi ingatkan ya!');
@@ -137,6 +135,7 @@ class HomeScreen extends Component {
     });
     this.state.audio = true
   }
+
   render() {
     let emot = ''
     if(this.props.data.emotion){

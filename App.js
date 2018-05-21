@@ -52,8 +52,6 @@ const RootStack = createSwitchNavigator({
   initialRouteName: "Splash"
 })
 
-
-
 class App extends React.Component {
   render() {
     return (

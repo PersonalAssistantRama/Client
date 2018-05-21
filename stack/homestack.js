@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import HomeScreen from './../screens/HomeScreen'
 import LoginScreen from './../screens/LoginScreen'
+import ListAlarmScreen from './../screens/ListAlarmScreen'
 
 const custom = (prop) => {
   return (
@@ -31,7 +32,8 @@ const custom = (prop) => {
 
 export default homestack = createDrawerNavigator({
   Dashboard: HomeScreen,
-  Logout: LoginScreen
+  ['List Alarm']: ListAlarmScreen,
+  Logout: LoginScreen,
 },{
   initialRouteName: 'Dashboard',
   drawerPosition: 'left',
