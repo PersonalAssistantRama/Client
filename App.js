@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {createStackNavigator, createDrawerNavigator, DrawerItems} from 'react-navigation'
+import {createStackNavigator, createDrawerNavigator, DrawerItems, createSwitchNavigator} from 'react-navigation'
 import {
   Image,
   View,

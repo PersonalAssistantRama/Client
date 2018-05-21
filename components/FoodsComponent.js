@@ -33,7 +33,7 @@ class FoodsComponent extends Component {
   }
   render() {
     return (
-      <View style={{height: 240}}>
+      <View style={{height: 240, marginBottom:20}}>
       <ScrollView horizontal>
       {
         this.state.data.map(value => (

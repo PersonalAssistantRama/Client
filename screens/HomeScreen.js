@@ -14,18 +14,19 @@ import {
   ScrollView,
   Modal
 } from 'react-native';
-import {Container} from 'native-base'
+import { Container, Content } from 'native-base'
 import SpeechAndroid from 'react-native-android-voice';
 import Tts from 'react-native-tts';
-
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import moment from 'moment'
+
 import { getReply, answerGame, setYupiAnswer } from '../store/chat/chat.actions'
 import LoadingHome from '../components/LoadingHome'
 import MovieComponent from '../components/MovieComponent'
 import FoodsComponent from '../components/FoodsComponent'
 import DateTimePicker from 'react-native-modal-datetime-picker';
-import moment from 'moment'
+
 
 import { localNotificationSchedule } from '../services/pushNotifications'
 
@@ -180,24 +181,17 @@ class HomeScreen extends Component {
         <View style={styles.container}>
           <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
           <ScrollView>
-            <View style={{alignItems:'center', width:'100%'}}>
+            <View style={{flexGrow: 1,alignItems:'center',justifyContent:'center', width:'100%'}}>
             {
               this.props.data.data ? <Text style={styles.both}>{this.props.data.data}</Text>:<Text></Text>
             }
             </View>
-
-            { this.props.movies ? <MovieComponent/> : <Text></Text> }
-
-            {
-              this.props.foods ? <FoodsComponent/> : <Text></Text>
-            }
-
             {
               this.props.data.data === 'Ok, apa yang mau saya ingatkan?' ? <Modal
-                  animationType="slide"
-                  transparent={true}
-                  visible={this.state.modalVisible}
-                  onRequestClose={() => this.setModalVisible(!this.state.modalVisible)}>
+              animationType="slide"
+              transparent={true}
+              visible={this.state.modalVisible}
+              onRequestClose={() => this.setModalVisible(!this.state.modalVisible)}>
                   <View style={{
                     flex: 1,
                     flexDirection: 'column',
@@ -208,7 +202,7 @@ class HomeScreen extends Component {
                          <Button
                            onPress={this._showDateTimePicker}
                            title="masukan tanggal dan waktu"
-                         />
+                           />
                         <Text>{this.state.showdatetime}</Text>
 
                          <DateTimePicker
@@ -217,12 +211,12 @@ class HomeScreen extends Component {
                            onCancel={this._hideDateTimePicker}
                            mode={'datetime'}
                            is24Hour={true}
-                         />
+                           />
                          <TextInput
                            placeholder="Apa yang ingin di ingatkan?"
                            placeholderTextColor="grey"
                            onChangeText={(deskripsipengingat) => this.setState({deskripsipengingat})}
-                         />
+                           />
 
                          <TextInput
                            placeholder="deskripsi"
@@ -243,34 +237,41 @@ class HomeScreen extends Component {
               <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
             </View>
 
-            <View style={{alignItems:'center',marginTop:30, paddingBottom:40}}>
+            <View style={{flex: 1,alignItems:'center',justifyContent:'center',marginTop:30, paddingBottom:30}}>
               {
                 this.state.question != '' ? <Text style={styles.user}>{this.state.question}</Text>:<Text></Text>
               }
             </View>
+              { this.props.movies ? <MovieComponent/> : <Text></Text> }
+  
+              {
+                this.props.foods ? <FoodsComponent/> : <Text></Text>
+              }
             </ScrollView>
 
             <View style={styles.instructions}>
               <TextInput
                 placeholder="What you think?"
                 placeholderTextColor="grey"
+                underlineColorAndroid="rgba(0,0,0,0)"
                 onChangeText={(text) => this.setState({text})}
                 onSubmitEditing={(event) => this.replyFromYupi()}
                 style={styles.inputdata}
-              />
+                />
             {
               this.state.text ?
-                <View style={{width:'20%'}}>
-                  <Button
-                    onPress={()=>this.replyFromYupi()}
-                    title="send"
-                    />
-                </View>:
-                  <TouchableHighlight onPress={this.onSpeak} style={styles.voice} underlayColor="#aaa">
-                    <View>
-                        <Image source={require('../assets/img/mic.png')} style={{width: 35, height: 35}}/>
-                    </View>
-                  </TouchableHighlight>
+              <View style={{width:'20%'}}>
+                <TouchableOpacity style={{ height: 40, backgroundColor:'#204E6D', justifyContent:'center'}}
+                  onPress={()=>this.replyFromYupi()}
+                >
+                    <Text style={{color: 'white', textAlign: 'center', fontSize:15, fontWeight:'bold'}}>Send</Text>
+                </TouchableOpacity>
+            </View>:
+              <TouchableHighlight onPress={this.onSpeak} style={styles.voice} underlayColor="#aaa">
+                <View>
+                    <Image source={require('../assets/img/audio-yupi.png')} style={{width: 35, height: 35}}/>
+                </View>
+              </TouchableHighlight>
             }
             </View>
           </ImageBackground>
@@ -294,13 +295,15 @@ const styles = StyleSheet.create({
   inputdata :{
     height: 40,
     width:'80%',
-    backgroundColor:'white'
+    backgroundColor:'white',
+    opacity: 0.5
   },
   voice : {
     width:'20%',
     alignItems:'center',
     padding: 3,
-    backgroundColor:'#5592f4'
+    backgroundColor:'white',
+    opacity: 0.5
   },
   instructions: {
     position: 'absolute',
@@ -314,15 +317,23 @@ const styles = StyleSheet.create({
     padding:10,
     borderRadius:3,
     color: 'white',
-    backgroundColor:'#0a0'
+    backgroundColor:'#204E6D',
+    height:60,
+    width:'80%',
+    textAlign: 'center'
   },
   both: {
     margin:5,
-    padding:10,
+    paddingTop:10,
+    paddingLeft: 10,
+    paddingRight: 10,
     width:'80%',
     borderRadius:3,
     color: 'grey',
-    backgroundColor:'white'
+    backgroundColor:'white',
+    height: 100,
+    // justifyContent:'center',
+    textAlign:'center'
   }
 });
 
