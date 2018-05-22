@@ -118,6 +118,18 @@ const styles = StyleSheet.create({
     width: null,
     height: null
    },
+   containerLoading: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+  horizontalLoading: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10
+  },
+  spinner: {
+    paddingRight: 20
+  }
 })
 
 const mapStateToProps = (state) => ({

@@ -20,6 +20,10 @@
         "source": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_out.xml"
+    },
+    {
         "merged": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_top.xml"
     },
@@ -84,6 +88,10 @@
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_popup_exit.xml"
+    },
+    {
         "merged": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_bottom.xml"
     },
@@ -114,6 +122,10 @@
     {
         "merged": "/home/lupa/phase3/client/client/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
         "source": "/home/lupa/phase3/client/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_top.xml"
     },
     {
         "merged": "/home/lupa/phase3/client/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
@@ -164,6 +176,10 @@
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_bottom.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_push_up_in.xml"
+    },
+    {
         "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
         "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_fade_in.xml"
     },
@@ -186,6 +202,10 @@
     {
         "merged": "/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_bottom.xml"
     },
     {
         "merged": "/home/lupa/phase3/final/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
@@ -304,6 +324,10 @@
         "source": "/home/lupa/phase3/final/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_top.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_slide_up.xml"
+    },
+    {
         "merged": "/home/lupa/phase3/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/home/lupa/phase3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_bottom.xml"
     },
@@ -326,6 +350,14 @@
     {
         "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/home/lupa/phase3/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
@@ -440,6 +472,10 @@
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
         "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_top.xml"
     },
@@ -484,6 +520,10 @@
         "source": "/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_popup_enter.xml"
+    },
+    {
         "merged": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
         "source": "/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_push_up_out.xml"
     },
@@ -494,6 +534,10 @@
     {
         "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
         "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "/home/lupa/phase3/client/client/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
@@ -604,12 +648,32 @@
         "source": "/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_slide_down.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_down.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_slide_down.xml"
+    },
+    {
         "merged": "/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
         "source": "/home/lupa/phase3/yupi/yupi2/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
         "merged": "/home/lupa/phase3/final/client/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/home/lupa/phase3/final/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/home/lupa/phase3/yupi/yupi1/client/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",

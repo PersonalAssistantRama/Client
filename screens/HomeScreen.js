@@ -46,7 +46,9 @@ class HomeScreen extends Component {
       showdatetime: '',
       modalVisible: true,
       titlepengingat: '',
-      deskripsipengingat: ''
+      deskripsipengingat: '',
+      latitude: null,
+      longitude: null,
     };
 
     this.onSpeak = this.onSpeak.bind(this);
@@ -199,7 +201,7 @@ class HomeScreen extends Component {
             }
 
             {
-              this.props.data.data? <View style={styles.triangle}></View> : <View style={styles.triangle}></View> 
+              this.props.data.data? <View style={styles.triangle}></View> : <View style={styles.triangle}></View>
             }
             </View>
             {
@@ -260,9 +262,9 @@ class HomeScreen extends Component {
               }
             </View>
               { this.props.movies ? <MovieComponent navigation={this.props.navigation}/> : <Text></Text> }
-  
+
               {
-                this.props.foods ? <FoodsComponent navigation={this.props.navigation}/> : <Text></Text>
+                this.props.foods ? <FoodsComponent lokasi={{lat:this.state.latitude,long:this.state.longitude}} navigation={this.props.navigation}/> : <Text></Text>
               }
             </ScrollView>
             <View style={styles.instructions}>
@@ -322,7 +324,7 @@ const styles = StyleSheet.create({
     marginRight:5,
     marginBottom:10,
     paddingLeft:10
-    
+
   },
   voice : {
     width:'20%',
