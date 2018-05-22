@@ -28,6 +28,10 @@
         "source": "/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/client/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/lupa/phase3/yupi/yupi3/client/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/lupa/phase3/yupi/yupi3/client/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
