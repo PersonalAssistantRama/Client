@@ -66,7 +66,7 @@ export const answerGame = (id, answer) => {
           dispatch(getReplySuccess({ data: 'Tebakan kamu benar!'}))
         } else {
           console.log('salah!!!!')
-          dispatch(getReplySuccess({ data: 'Tebakan kamu salah, Payah nih!'}))
+          dispatch(getReplySuccess({ data: 'Tebakan kamu salah, payah nih!'}))
         }
         dispatch(editNotInGame());
       })
@@ -124,11 +124,11 @@ export const getReply = (string) => {
           // .catch(err => {
           //   dispatch(error(err))
           // })
-          dispatch(getReplySuccess({data: 'Film yang Yupi rekomendasiin buat kamu:'}))
+          dispatch(getReplySuccess({data: 'Berikut Film yang Yupi rekomendasiin buat kamu, lagi tayang nih!'}))
           dispatch(changeMovieStatus(true))
           dispatch(changeFoodStatus(false))
         } else if (replyFromYupi.data == 'IWJFDXNC6YWEJ235HKMWJDIWE') {
-          let foodReply = "Makanan yang Yupi rekomendasiin buat kamu: "
+          let foodReply = "Berikut makanan yang Yupi rekomendasiin, deket dengan kamu loh"
           // axios.get('https://4a0bacf2.ngrok.io/foods')
           // .then(response => {
           //   response.data.data.data.map(food => {
@@ -150,7 +150,7 @@ export const getReply = (string) => {
             // dispatch(enterInGame(response.data.data.data._id))
             dispatch(enterInGame(response.data.data._id))
             console.log('id game----', response.data.data._id)
-            dispatch(getReplySuccess({ data: "Yuk! Jawab ya, " + response.data.data.question }))
+            dispatch(getReplySuccess({ data: "Ok " + response.data.data.question }))
             dispatch(changeMovieStatus(false))
             dispatch(changeFoodStatus(false))
           })

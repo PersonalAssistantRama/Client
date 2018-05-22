@@ -32,7 +32,7 @@ const custom = (prop) => {
 
 export default homestack = createDrawerNavigator({
   Dashboard: HomeScreen,
-  ['List Alarm']: ListAlarmScreen,
+  ['List Reminder']: ListAlarmScreen,
   Logout: LoginScreen
 },{
   initialRouteName: 'Dashboard',

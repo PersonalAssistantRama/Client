@@ -8,7 +8,7 @@ import {
 
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import {loginUser} from '../store/user/user.actions'
+import {loginUser, logoutUser} from '../store/user/user.actions'
 import {Alert} from 'react-native'
 import { Container,
   Content,
@@ -33,6 +33,11 @@ class LoginScreen extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log('masuk did')
+    this.props.logoutUser()
+  }
+
   loginButton = async () => {
     // console.log(this.state.username)
     let user = {
@@ -42,6 +47,7 @@ class LoginScreen extends Component {
     await this.props.loginUser(user)
     console.log("status===", this.props.user)
     if(this.props.user.isLogin) {
+      console.log('masuk setelah login2', this.props)
       this.props.navigation.navigate('Home')
     }else{
       Alert.alert('Login failed!')
@@ -142,7 +148,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  loginUser
+  loginUser, logoutUser
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps) (LoginScreen);

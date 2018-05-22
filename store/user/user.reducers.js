@@ -2,7 +2,8 @@ import {
   REGISTER_SUCCESS,
   LOGIN_SUCCESS,
   LOADING,
-  ERROR
+  ERROR,
+  USER_LOGOUT
 } from './user.actionTypes'
 
 const initialState = {
@@ -39,6 +40,11 @@ const reducers = (state={...initialState}, action) => {
       error: true,
       isLogin: false,
       loading: false
+    })
+    case USER_LOGOUT:
+    return({
+      ...state,
+      isLogin: false,
     })
     default:
     return state

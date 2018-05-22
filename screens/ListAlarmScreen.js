@@ -16,23 +16,12 @@ import {
 } from 'native-base';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import Spinner from 'react-native-spinkit'
+import moment from 'moment'
+
 import { getNotification, deleteNotification } from '../store/notifications/notification.actions'
-import LoadingSymbol from '../components/LoadingSymbol'
+import LoadingHome from '../components/LoadingHome'
 
 class ListAlarmScreen extends Component {
-  static navigationOptions = ({
-    headerTitle: 'List Alarm',
-    headerTintColor: '#fff',
-    headerStyle: {
-      backgroundColor: '#204E6D',
-      justifyContent: 'center'
-    },
-    headerTitleStyle: {
-      textAlign: 'center'
-    }
-  })
-
   componentDidMount() {
     const id = this.props.user.user._id;
     this.props.getNotification(id)
@@ -40,32 +29,32 @@ class ListAlarmScreen extends Component {
 
   deleteNotification(notification) {
     this.props.deleteNotification(notification)
-    alert('Trash')
   }
 
   render() {
     if(this.props.notificationReducer.loading) {
-      return <LoadingSymbol/>
+      return <LoadingHome/>
     } else {
-      if(this.props.notificationReducer.data.data) {
+      if(this.props.notificationReducer.data) {
       return (
         <Container>
-          <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
-          <View style={{flex: 1, alignItems:'center', width:'100%', paddingTop:40}}>
-          
-            <Text style={{fontSize:32, fontFamily:'Iowan Old Style'}}>
-              List Alarm
+          <View style={{backgroundColor:'white', width: '100%', justifyContent:'center', alignItems:'center', paddingTop:20}}>
+            <Text style={styles.listAlarm}>
+              List Reminder
             </Text>
-          
-              <Content scrollEnabled={false} style={{marginTop:40}}>
+          </View>
+          <View style={{flex: 1, alignItems:'center', width:'100%'}}>
+              <Content scrollEnabled={true}>
                 { 
-                  this.props.notificationReducer.data.data.map(notification => (
+                  this.props.notificationReducer.data.map(notification => (
                     <SwipeRow
-                      rightOpenValue={-75}
+                      rightOpenValue={-120}
+                      disableRightSwipe={true}
                       key={notification._id}
                       body={
-                        <View style={{width:'80%', marginLeft:8}}>
-                          <Text>{ notification.title } - { notification.date }</Text>
+                        <View style={{width:'100%', paddingLeft:24, paddingRight: 24}}>
+                          <Text style={{color:'#204E6D',fontFamily: 'SourceSansPro', fontSize:20}}>{ notification.message }</Text>
+                          <Text style={{color:'#204E6D',fontFamily: 'SourceSansPro', fontSize:12}}>{ moment(notification.date).format('LLLL') }</Text>
                         </View>
                       }
                       right={
@@ -78,7 +67,6 @@ class ListAlarmScreen extends Component {
                 }
               </Content>
             </View>
-          </ImageBackground>
         </Container>
       );
       } else {
@@ -89,6 +77,15 @@ class ListAlarmScreen extends Component {
 }
 
 const styles = StyleSheet.create({
+  listAlarm: {
+    fontSize:20,
+    fontFamily: 'SourceSansPro',
+    color:'#204E6D',
+    fontWeight:'bold',
+    textAlign:'center',
+    height: 40,
+    opacity: 70
+  },
   container: {
     flex: 1,
     justifyContent: 'center',

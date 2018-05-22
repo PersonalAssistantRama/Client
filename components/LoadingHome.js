@@ -13,14 +13,14 @@ class LoadingHome extends Component {
     return (
       <View style={styles.container}>
         <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
-        <View style={{alignItems:'center',justifyContent: 'center', width:'100%'}}>
+        <View style={{alignItems:'center',justifyContent: 'center', width:'100%', marginTop:32}}>
           <View style={styles.both}>
             <Text style={{color: '#204E6D', fontSize:16}}>Yupi sedang berpikir </Text><Spinner style={styles.spinner} isVisible={true} size={20} type="ThreeBounce" color="grey"/>
           </View>
             <View style={styles.triangle}></View>
         </View>
         <View style={{alignItems:'center',marginTop:4}}>
-          <Image source={require('../assets/img/18.heran.png')} style={{justifyContent:'center',width: 250, height: 250}}/>
+          <Image source={require('../assets/img/18.heran.png')} style={{justifyContent:'center',width: 200, height: 200}}/>
         </View>
         </ImageBackground>
       </View>
