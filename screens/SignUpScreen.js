@@ -83,7 +83,7 @@ class SignUpScreen extends Component {
         <Content style={{paddingHorizontal:20}}>
           <Form style={{paddingVertical:30}}>
             <Item rounded last style={ styles.questionForm }>
-              <Label>Username</Label>
+              <Label style={styles.labelInput}>Username</Label>
               <Input
               name="username"
               autoCapitalize='none'
@@ -91,7 +91,7 @@ class SignUpScreen extends Component {
               onChangeText={(username) => this.setState({username}) }/>
             </Item>
             <Item rounded last style={ styles.questionForm }>
-              <Label>Password</Label>
+              <Label style={styles.labelInput}>Password</Label>
               <Input
               name="password"
               autoCapitalize='none'
@@ -100,7 +100,7 @@ class SignUpScreen extends Component {
               onChangeText={(password) => this.setState({password}) }/>
             </Item>
             <Item rounded last style={ styles.questionForm }>
-              <Label>First Name</Label>
+              <Label style={styles.labelInput}>First Name</Label>
               <Input
               name="first_name"
               autoCapitalize='none'
@@ -108,7 +108,7 @@ class SignUpScreen extends Component {
               onChangeText={(first_name) => this.setState({first_name}) }/>
             </Item>
             <Item rounded last style={ styles.questionForm }>
-              <Label>Last Name</Label>
+              <Label style={styles.labelInput}>Last Name</Label>
               <Input
               name="last_name"
               autoCapitalize='none'
@@ -197,6 +197,9 @@ const styles = StyleSheet.create({
     width: null,
     height: null
    },
+   labelInput: {
+    fontSize:12
+   }
 })
 
 const mapStateToProps = (state) => ({

@@ -1,4 +1,4 @@
-#Mon May 21 21:16:05 WIB 2018
-base.0=/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Tue May 22 12:40:53 WIB 2018
+base.0=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/Users/Mac/Desktop/hacktiv8/phase3/finalProject/yupiPersonalAssistant/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

@@ -1,5 +1,5 @@
 import PushNotification from 'react-native-push-notification';
-import { PushNotificationIOS } from 'react-native'
+import { PushNotificationIOS } from 'react-native';
 
 const configure = () => {
  PushNotification.configure({

@@ -156,15 +156,24 @@ class HomeScreen extends Component {
       else if(parsing == 'garing'){
         emot = require('../assets/img/garing.png')
       }
+      else if(parsing == 'sedih'){
+        emot = require('../assets/img/sedih.png')
+      }
+      else if(parsing == 'takut'){
+        emot = require('../assets/img/takut.png')
+      }
+      else if(parsing == 'kejut'){
+        emot = require('../assets/img/kejut.png')
+      }
       else{
-        emot = require('../assets/img/standby.png')
+        emot = require('../assets/img/talk.png')
       }
     }
     else if(this.props.data.data == 'Tebakan kamu benar!'){
       emot = require('../assets/img/happy.png')
     }
     else if(this.props.data.data == 'Tebakan kamu salah, Payah nih!'){
-      emot = require('../assets/img/garing.png')
+      emot = require('../assets/img/payah.png')
     }
     else if(this.props.data.data == 'Ok, apa yang mau saya ingatkan?'){
       emot = require('../assets/img/garing.png')
