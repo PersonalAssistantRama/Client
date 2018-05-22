@@ -3,363 +3,345 @@
 
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/client/react-native-push-notification/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_b4374e59b488995bb02ed405cb4a417eac8b5860.jar" />
+        sha1="b84f9db750bc48896537066e2c5268b2fe9ba052">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-push-notification-unspecified_368b415d15166cfbd1039494ef41d2f934d1a512.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/client/react-native-tts/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="52dfc85e756c2a81263d856e10f32ef5aa7a5a0f">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-tts-unspecified_e5961fdc3d05f016ad823d800ea444b0ea7500f3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_b26b155c6ff07fc54208bc7653ed31371b386c1c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_e67a5c242a61c32810e0bebcb4a943b09eb3ea0c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_71d9dae98fbf60995e4f52ab3c7be29901876878.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/client/react-native-spinkit/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e6d653e1f18275b7ea55fac228d882591f5fa61c">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-spinkit-unspecified_fb28ff665a90cc6fd6d5f160d524993de1a11e92.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_3708853e0912c9a48244573309f1427a7d14fd6b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_a26c64547a43be100104af79194023681ddb599c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/client/react-native-push-notification/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c23ebf89de9a842d1b57641b366008c22a14ff44">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-push-notification-unspecified_99ceda547a637a6e7b881717e673d6a50a91fec3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_7b8147559ece809f00940947254890640c3bd572.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_07fd772d1196a7ab709057fadcf9ddfc0f9b4fa2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_f0148ae27b048dc2930c97a9b479617b92600beb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_381948b315a73dcfa4d3300f2dd95b7829f266f1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_8b6f4e24eca0d9bec17b2b12c2dd26f1989a2fb6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_7b083c525b9bbbeb7565299f9ea37e90794e6a5a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.4_8484f52436110fa9f2161134fad08fc6fe9887fb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.0.4_5a077429c8570978291bd1750ba1405ffba92168.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_0910bbf1e188c6cf949420257cc2da6bb225f421.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_d1f0a3f6025c0b4d67cb5d49bd3bd354f4675abc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_734053941d6c1d6e816f738d3615bd64c70a5353.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_166c83ea21c727677a8792dfc8cd88b0ebfbac55.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_7f253f3caf81d0dd5c6d767671dd3855d77f8dba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_c97798bb0bf421c641e5f72ec16e8c74eb60c5b0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_fe8436e8fb43984e93ce04cff574f28ef76eb97f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_353cf09207727f5fa077cd4545c6a0996f30948c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_8d0d418cf059a0e4b0e963052b17ce1d0bbf66ca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="531c33d3697000a05e9493a2d0f09ba41fa114d3">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.8_69200f6f0031c69a96e4d384e592baae402fa048.jar" />
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.8_1100d8a29eb45f1c2882aeb71f0662c9b119bfb3.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/client/react-native-spinkit/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_a6135afa35cdc80819be28de87266cbc0171a3eb.jar" />
+        sha1="5e2ea81b6f92ed7da3e570feea2ef33d52291245">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-spinkit-unspecified_b3d0765575f9325d2ec6ef05552dcef4e894175e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_68a22ccc9435ecae9e7c724877fd30e0c922e10e.jar" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_939d026e40915c4092200c650936d39c583903b1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/client/react-native-tts/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_bd4ce5584f0506503e4610aed4c7d3f3f94440cf.jar" />
+        sha1="2074948606eff4d60e36014dc6c00b4493043217">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-tts-unspecified_69a801e009feb6fc512c7a2539faf1232407e2a6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/client/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="526a445406d661bb9c5606b74ab6ddf34a4b3004">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-vector-icons-unspecified_409214d987e6faf1fa743467f275bb9aed61bb3e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/client/react-native-message-bubble/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="50e072c11b7a811763b7941cff88f7853df1cbb7">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/client-react-native-message-bubble-unspecified_960f43302dbd9d0a7998348ebc616e6e26d49936.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_c7c5935fce8ac6a6825f592c072b2c609d1926cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_81f7bc321c81365758e24efca33faeac437397fe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/client/VoiceModule/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c39ccfce2d73160925f5c06edff7a89b589b88bb">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/client-VoiceModule-unspecified_987d6ff23596c531023adeb8b980a4f80a55c4f6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_392a0931c60fd486f79f48725da581d38e43db56.jar" />
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_dd365cabc75ff9d0f4026d006cfb8fde3e1c2b03.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_ac93e7ae7f7959686a7cbd0ac52ea0f232222b46.jar" />
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_062071f6d96c98f84e2a03aef7652ecf897f9fe4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_5db2fff7de63ab0e15c01ae06b960175198e02ad.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_4fa5f203735cd0dfe1202f387ba0c1dcbaf924af.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_4de877311373653b2c0b08b8d9f7886d9c1c5f4a.jar" />
+        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_d5b688b81c2e36c90298b77f4aedaaa792361f8c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/harinur/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_11e5a06ad1e5f413b68e02841e81dfc37da148ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/client/VoiceModule/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="80462f9db06a6f3d032b4661e9c06c5829142665">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/client-VoiceModule-unspecified_770690c0703e099cdea30bb769c564404828fb6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_17c6c95e8ce9231b286bde66bdcddffcfba93e78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_67c105fb2a5730adee30d3eb666ed370a02c5191.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_240eba504ceec001d07e250fc5573dbf225b43fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_da43e4ff4c3447ddf1ed770b4f3fdfd624cc24b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_2830dc111d82be4363d352e033be32f275186e69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_81a163bfa8add784ee32c2d39eec6d37be5097be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_e5d169148288234ede437a5bb169d36f2dadb7a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_4f006ba1825471e5a505757acf6f3da36a9a400f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_e20326bee070da1192bb6c24697672eaeee7cb67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_397f596aa007fcb00d013e030224a39957ac6b1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6a55014685f04bbbcaa7082afa6a1644d8f6fd72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_b98f69f1133de8b6a24f7f6a8a15066de3f9ce9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_2d4401d6e948817ce8c0d5a578def6fe095d3e01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_eead063027050d2e9d2f4adeacf59466abab2c87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_1859ffe0fb99fd64c7a12eb1b7625f702ece88d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_6a29f2623a62e7876894cab1485148089f651b3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_a5dd537a9967501bff04ac20cc7b47fa1cad1cb4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/home/harinur/Hacktiv8/Hacktiv8_hari/finalProject/project/client/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_2c11200fe8d35e99df5b1946daa20227225ccbbc.jar" />
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_d86f169ae9340cbccd9c0d6cfb8cb3aab1c4e62a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_0723a307341a0e2bd53223374f00b44c14408218.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_6129cbbb2058792248d898c878adec9e2f3e218d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.0.4_2698b0ddb950618d1fc81b4a805ba2e12102f5f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.4_0ba6d73b3827ad2fda3d8625fbf34d43fac42d54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_e5621ea8cab02f3e53eb9f9ce58ae801d2c3a88a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_3fff220052a451711c7f2200f1145210580b4543.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_05b8483f03ae34a6db8dee25944ab26641765ffc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_3cf5ab28e2dba181bc0b0d973d7ecf66f01337fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/home/zena/Documents/Hacktiv8/Phase03/FinalProject/client/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_85de1a1225ae72220bc9627d5d4eb6e5ae04a2fe.jar" />
     </item>
 
 </items>

@@ -22,6 +22,7 @@ import { bindActionCreators } from 'redux'
 import moment from 'moment'
 
 import { getReply, answerGame, setYupiAnswer } from '../store/chat/chat.actions'
+import { newNotification } from '../store/notifications/notification.actions'
 import LoadingHome from '../components/LoadingHome'
 import MovieComponent from '../components/MovieComponent'
 import FoodsComponent from '../components/FoodsComponent'
@@ -120,10 +121,13 @@ class HomeScreen extends Component {
     const objNotif = {
       title: this.state.titlepengingat,
       message: this.state.deskripsipengingat,
-      date: this.state.showdatetime
+      date: this.state.showdatetime,
+      id: this.props.users.user._id
     }
 
-    localNotificationSchedule(objNotif);
+    this.props.newNotification(objNotif);
+
+    // localNotificationSchedule(objNotif);
 
     this.props.setYupiAnswer('Ok, nanti Yupi ingatkan ya!');
     this.setState({
@@ -410,7 +414,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  getReply, answerGame, setYupiAnswer
+  getReply, answerGame, setYupiAnswer, newNotification
 }, dispatch)
 
 export default connect(
