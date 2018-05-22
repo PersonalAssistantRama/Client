@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   Image,
+  Text,
   StyleSheet
 } from 'react-native'
 
@@ -37,8 +38,12 @@ const styles = StyleSheet.create({
     flex: 1,
     height: null,
     width: 200,
-    alignSelf: 'center',
     resizeMode: 'contain',
+  },
+  title: {
+    fontFamily: 'Pacifico',
+    color: 'white',
+    fontSize: 60,
   }
 })
 export default SplashScreen;

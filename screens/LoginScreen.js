@@ -66,7 +66,7 @@ class LoginScreen extends Component {
             <Text style={styles.tagline}>Your Personal Assistant</Text>
             <Form style={{paddingVertical:0}}>
               <Item fixedLabel last rounded style={ styles.questionForm }>
-                <Label>Username</Label>
+                <Label style={{fontSize:12}}>Username</Label>
                 <Input
                 name="username"
                 autoCapitalize='none'
@@ -74,7 +74,7 @@ class LoginScreen extends Component {
                 onChangeText={(username) => this.setState({username}) }/>
               </Item>
               <Item fixedLabel last rounded style={ styles.questionForm }>
-                <Label>Password</Label>
+                <Label style={{fontSize:12}}>Password</Label>
                 <Input
                 name="password"
                 autoCapitalize='none'
@@ -91,11 +91,11 @@ class LoginScreen extends Component {
             </Button>
             </Body>
             <Body style={{flexDirection:'row',justifyContent:'center', marginTop:10}}>
-            <Text style={{paddingVertical:5}}>Belum kenal Yupi?</Text>
+            <Text style={{paddingVertical:5, fontFamily:'SourceSansPro'}}>Belum kenal Yupi?</Text>
             <Button transparent
               onPress={() => this.props.navigation.navigate('SignUp')}
               >
-              <Text>Kenalan</Text>
+              <Text style={{fontFamily:'SourceSansPro'}}>Kenalan</Text>
             </Button>
             </Body>
           </Content>
@@ -117,14 +117,17 @@ const styles = StyleSheet.create({
     backgroundColor:'white'
   },
   tagline: {
+    fontFamily: 'SourceSansPro',
     textAlign: 'center',
     fontSize: 16,
     paddingTop: 20,
     paddingBottom: 20
   },
   title: {
+    fontFamily: 'Pacifico',
+    color: '#204E6D',
     textAlign: 'center',
-    fontSize: 50,
+    fontSize: 60,
     paddingTop: 5
   },
   backgroundImage: {

@@ -14,9 +14,9 @@ import ListAlarmScreen from './../screens/ListAlarmScreen'
 const custom = (prop) => {
   return (
     <View style={{flex: 1}}>
-      <View style={{paddingVertical: 25, borderBottomColor: 'rgba(255, 255, 255, 0.4)', borderBottomWidth: 1, alignItems: 'center'}}>
+      <View style={{paddingVertical: 30, borderBottomColor: 'rgba(255, 255, 255, 0.4)', borderBottomWidth: 1, alignItems: 'center'}}>
         <Image style={{height: 150, width: 150}} source={require('./../assets/img/happy.png')} />
-        <Text style={{fontSize: 24, fontFamily: '100', marginTop: 12, color: '#fff'}}> yupi </Text>
+        <Text style={{fontSize: 24, fontFamily: 'Pacifico', marginTop: 12, color: '#fff'}}>Yupi</Text>
       </View>
       <DrawerItems {...prop}
         activeTintColor='#2196f3'
