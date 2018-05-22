@@ -16,6 +16,10 @@
         "source": "/home/lupa/phase3/yupi/yupi2/client/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/lupa/phase3/yupi/yupi5/client/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/home/lupa/phase3/yupi/yupi5/client/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/lupa/phase3/client/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
         "source": "/home/lupa/phase3/client/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },

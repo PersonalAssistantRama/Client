@@ -46,7 +46,9 @@ class HomeScreen extends Component {
       showdatetime: '',
       modalVisible: true,
       titlepengingat: '',
-      deskripsipengingat: ''
+      deskripsipengingat: '',
+      latitude: null,
+      longitude: null,
     };
 
     this.onSpeak = this.onSpeak.bind(this);
@@ -115,6 +117,17 @@ class HomeScreen extends Component {
     if (this.props.users){
       Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
     }
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null,
+        });
+      },
+      (error) => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000},
+    );
   }
 
   setModalVisible(visible) {
@@ -193,13 +206,14 @@ class HomeScreen extends Component {
         <View style={styles.container}>
           <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
           <ScrollView>
+
             <View style={{flexGrow: 1,alignItems:'center',justifyContent:'center', width:'100%'}}>
             {
               this.props.data.data ? <View style={styles.both}><Text style={{fontSize:16, color:'#204E6D'}}>Yupi: " {this.props.data.data} "</Text></View>:<View style={styles.both}><Text style={{fontSize:16}}>Yupi: " Hai {this.props.users.user.username}, saya Yupi "</Text></View>
             }
 
             {
-              this.props.data.data? <View style={styles.triangle}></View> : <View style={styles.triangle}></View> 
+              this.props.data.data? <View style={styles.triangle}></View> : <View style={styles.triangle}></View>
             }
             </View>
             {
@@ -260,9 +274,9 @@ class HomeScreen extends Component {
               }
             </View>
               { this.props.movies ? <MovieComponent navigation={this.props.navigation}/> : <Text></Text> }
-  
+
               {
-                this.props.foods ? <FoodsComponent navigation={this.props.navigation}/> : <Text></Text>
+                this.props.foods ? <FoodsComponent lokasi={{lat:this.state.latitude,long:this.state.longitude}} navigation={this.props.navigation}/> : <Text></Text>
               }
             </ScrollView>
             <View style={styles.instructions}>
@@ -321,7 +335,7 @@ const styles = StyleSheet.create({
     marginRight:5,
     marginBottom:10,
     paddingLeft:10
-    
+
   },
   voice : {
     width:'20%',

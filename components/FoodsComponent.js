@@ -23,7 +23,7 @@ class FoodsComponent extends Component {
   }
   componentDidMount () {
     this.getFoods()
-    
+
   }
   // getUrlDetail = (url) => {
   //   this.props.getUrl(url)
@@ -32,15 +32,19 @@ class FoodsComponent extends Component {
 
   getFoods = () => {
     axios({
-      method: 'get',
-      url: `http://35.198.243.108/foods`
+      method: 'post',
+      url: `http://35.198.243.108/foods`,
+      data:{
+        lat: this.props.lokasi.lat,
+        long: this.props.lokasi.long
+      }
     }).then(response => {
       console.log("response===", response.data.data)
       this.setState({
         data: response.data.data
       })
     })
-    
+
   }
   render() {
     return (
