@@ -5,8 +5,10 @@ import {
   SET_INGAME_MODE,
   SET_NOT_INGAME_MODE,
   SHOW_MOVIE_LIST,
-  SHOW_FOODS_LIST
+  SHOW_FOODS_LIST,
+  URL_DETAIL
 } from './chat.actionsTypes'
+// import { stat } from 'fs';
 
 const initialState = {
   idGame: '',
@@ -18,7 +20,8 @@ const initialState = {
   },
   inGame: false,
   movies: false,
-  foods: false
+  foods: false,
+  urlDetail: ''
 }
 
 const reducers = (state = {...initialState} , action) => {
@@ -75,6 +78,12 @@ const reducers = (state = {...initialState} , action) => {
       return {
         ...state,
         foods: action.payload
+      }
+
+      case URL_DETAIL:
+      return {
+        ...state,
+        urlDetail: action.payload
       }
 
     default:

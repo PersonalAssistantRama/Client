@@ -13,6 +13,7 @@ import SplashScreen from './screens/SplashScreen'
 import homestack from './stack/homestack'
 import {Provider} from 'react-redux'
 import store from './store/index'
+import DetailPage from './screens/DetailPage'
 
 YellowBox.ignoreWarnings(
   ['Warning: isMounted(...) is deprecated',
@@ -20,14 +21,26 @@ YellowBox.ignoreWarnings(
   'Possible Unhandled Promise Rejection',
   'Warning: Cannot update during an existing state transition',
   "Warning: Can't call setState (or forceUpdate) on an unmounted component"]);
+ 
 
+const HomePage = createStackNavigator({
+  Home: {
+    screen: HomeScreen
+  },
+  DetailPage: {
+    screen: DetailPage
+  }
+})
 
-const RootStack = createSwitchNavigator({
+const RootStack = createStackNavigator({
   Login: {
     screen: LoginScreen,
   },
   SignUp:{
     screen: SignUpScreen
+  },
+  DetailPage: {
+    screen: DetailPage
   },
   Home: {
     screen: homestack,
@@ -41,7 +54,7 @@ const RootStack = createSwitchNavigator({
   }
 },{
    navigationOptions: ({ navigation }) => ({
-    headerTitle: 'YUPI',
+    // headerTitle: 'YUPI',
     headerTintColor: '#fff',
     headerStyle: {
       backgroundColor: '#34b8ed',

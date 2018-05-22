@@ -15,7 +15,7 @@ class LoadingHome extends Component {
         <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
         <View style={{alignItems:'center',justifyContent: 'center', width:'100%'}}>
           <View style={styles.both}>
-            <Text style={{color: 'grey', fontSize:16}}>Yupi is thinking </Text><Spinner style={styles.spinner} isVisible={true} size={20} type="ThreeBounce" color="grey"/>
+            <Text style={{color: '#204E6D', fontSize:16}}>Yupi sedang berpikir </Text><Spinner style={styles.spinner} isVisible={true} size={20} type="ThreeBounce" color="grey"/>
           </View>
             <View style={styles.triangle}></View>
         </View>

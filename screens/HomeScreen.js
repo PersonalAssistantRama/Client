@@ -29,7 +29,6 @@ import DateTimePicker from 'react-native-modal-datetime-picker';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
 import { localNotificationSchedule } from '../services/pushNotifications'
-// import BubbleText from 'react-native-message-bubble'
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -183,7 +182,7 @@ class HomeScreen extends Component {
           <ScrollView>
             <View style={{flexGrow: 1,alignItems:'center',justifyContent:'center', width:'100%'}}>
             {
-              this.props.data.data ? <View style={styles.both}><Text style={{fontSize:16}}>Yupi: " {this.props.data.data} "</Text></View>:<View style={styles.both}><Text style={{fontSize:16}}>Yupi: " Hai {this.props.users.user.username}, saya Yupi "</Text></View>
+              this.props.data.data ? <View style={styles.both}><Text style={{fontSize:16, color:'#204E6D'}}>Yupi: " {this.props.data.data} "</Text></View>:<View style={styles.both}><Text style={{fontSize:16}}>Yupi: " Hai {this.props.users.user.username}, saya Yupi "</Text></View>
             }
 
             {
@@ -247,10 +246,10 @@ class HomeScreen extends Component {
                 this.state.question != '' ? <View style={styles.triangleQuestion}></View> : <Text></Text>
               }
             </View>
-              { this.props.movies ? <MovieComponent/> : <Text></Text> }
+              { this.props.movies ? <MovieComponent navigation={this.props.navigation}/> : <Text></Text> }
   
               {
-                this.props.foods ? <FoodsComponent/> : <Text></Text>
+                this.props.foods ? <FoodsComponent navigation={this.props.navigation}/> : <Text></Text>
               }
             </ScrollView>
             <View style={styles.instructions}>
@@ -334,13 +333,13 @@ const styles = StyleSheet.create({
     padding:10,
     // borderRadius:3,
     color: 'white',
-    backgroundColor:'#204E6D',
+    backgroundColor:'#03A9F4',
     opacity: 0.8,
     height:60,
     width:'80%',
     textAlign: 'center',
     borderWidth: 1,
-    borderColor: '#204E6D',
+    borderColor: '#03A9F4',
     // borderBottomLeftRadius: 25,
     // borderTopRightRadius:20,
     // borderTopLeftRadius: 25
@@ -355,7 +354,7 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     width:'80%',
     // borderRadius:3,
-    // color: 'grey',
+    // color: '#204E6D',
     backgroundColor:'white',
     height: 100,
     justifyContent:'center',
@@ -391,7 +390,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 15,
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
-    borderTopColor: '#204E6D',
+    borderTopColor: '#03A9F4',
     marginTop:0,
     marginLeft:200,
     opacity: 0.8
