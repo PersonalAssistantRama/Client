@@ -10,9 +10,9 @@ import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
 import SplashScreen from './screens/SplashScreen'
-import ListAlarm from './screens/ListAlarmScreen'
+import ListAlarmScreen from './screens/ListAlarmScreen'
 import homestack from './stack/homestack'
-import {Provider} from 'react-redux'
+import { Provider } from 'react-redux'
 import store from './store/index'
 import DetailPage from './screens/DetailPage'
 
@@ -32,7 +32,7 @@ const HomePage = createStackNavigator({
     screen: DetailPage
   },
   ListAlarm: {
-    screen: ListAlarm
+    screen: ListAlarmScreen
   }
 })
 
@@ -47,7 +47,7 @@ const RootStack = createStackNavigator({
     screen: DetailPage
   },
   ListAlarm: {
-    screen: ListAlarm
+    screen: ListAlarmScreen
   },
 
   Home: {

@@ -2,7 +2,8 @@ import {
   REGISTER_SUCCESS,
   LOGIN_SUCCESS,
   LOADING,
-  ERROR
+  ERROR,
+  USER_LOGOUT
 } from './user.actionTypes'
 
 import axios from 'axios'
@@ -41,6 +42,12 @@ export const loginUser = (data) => {
   }
 }
 
+export const logoutUser = () => {
+  return async dispatch => {
+    dispatch(logout())
+  }
+}
+
 const registerSuccess = (data) => ({
   type: REGISTER_SUCCESS,
   payload: data
@@ -58,4 +65,8 @@ const loading = () => ({
 
 const errorCheck = () => ({
   type: ERROR
+})
+
+const logout = () => ({
+  type: USER_LOGOUT,
 })

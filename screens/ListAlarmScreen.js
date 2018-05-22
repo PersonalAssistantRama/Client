@@ -29,7 +29,6 @@ class ListAlarmScreen extends Component {
 
   deleteNotification(notification) {
     this.props.deleteNotification(notification)
-    alert('Trash')
   }
 
   render() {

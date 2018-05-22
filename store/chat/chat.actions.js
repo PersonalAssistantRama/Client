@@ -66,7 +66,7 @@ export const answerGame = (id, answer) => {
           dispatch(getReplySuccess({ data: 'Tebakan kamu benar!'}))
         } else {
           console.log('salah!!!!')
-          dispatch(getReplySuccess({ data: 'Tebakan kamu salah, Payah!'}))
+          dispatch(getReplySuccess({ data: 'Tebakan kamu salah, payah nih!'}))
         }
         dispatch(editNotInGame());
       })

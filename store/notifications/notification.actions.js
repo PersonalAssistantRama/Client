@@ -40,7 +40,7 @@ export const deleteNotification = (notification) => {
   return dispatch => {
     axios.delete(`${baseUrl}/notifications/${notification._id}`)
       .then(response => {
-        PushNotification.cancelLocalNotifications({title: notification.title});
+        PushNotification.cancelLocalNotifications({title: notification.message});
         dispatch(deleteThisNotification(notification._id));
       })
   }

@@ -40,14 +40,13 @@ const reducers = (state = { ...initialState }, action) => {
         loading: false
       }
     case DELETE_NOTIFICATION:
-      var removed = state.data.data.filter((data) => data._id != action.payload)
-      let dataObj = {
-        ...state.data,
-        data: removed
-      }
+      console.log('masuk sini')
+      console.log('state', state.data)
+      console.log('payload', action.payload)
+      var removed = state.data.filter((data) => data._id != action.payload)
       return ({
         ...state,
-        data: dataObj
+        data: removed
       })
     default:
       return state;
