@@ -3,6 +3,8 @@ package com.client;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.bubblemessage.BubbleMessagePackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 import net.no_mad.tts.TextToSpeechPackage;
@@ -27,6 +29,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new BubbleMessagePackage(),
+            new VectorIconsPackage(),
             new ReactNativePushNotificationPackage(),
             new RNSpinkitPackage(),
           new TextToSpeechPackage(),
