@@ -16,8 +16,9 @@ import {
 } from 'native-base';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-
+import Spinner from 'react-native-spinkit'
 import { getNotification, deleteNotification } from '../store/notifications/notification.actions'
+import LoadingSymbol from '../components/LoadingSymbol'
 
 class ListAlarmScreen extends Component {
   static navigationOptions = ({
@@ -44,7 +45,7 @@ class ListAlarmScreen extends Component {
 
   render() {
     if(this.props.notificationReducer.loading) {
-      return <Text>Loading</Text>
+      return <LoadingSymbol/>
     } else {
       if(this.props.notificationReducer.data.data) {
       return (
@@ -120,6 +121,18 @@ const styles = StyleSheet.create({
     width: null,
     height: null
    },
+   containerLoading: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+  horizontalLoading: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10
+  },
+  spinner: {
+    paddingRight: 20
+  }
 })
 
 const mapStateToProps = (state) => ({
