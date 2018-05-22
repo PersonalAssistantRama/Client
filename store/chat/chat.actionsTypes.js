@@ -10,3 +10,5 @@ export const SET_NOT_INGAME_MODE = 'SET_NOT_INGAME_MODE'
 export const SHOW_MOVIE_LIST = 'SHOW_MOVIE_LIST'
 
 export const SHOW_FOODS_LIST = 'SHOW_FOODS_LIST'
+
+export const URL_DETAIL = 'URL_DETAIL'

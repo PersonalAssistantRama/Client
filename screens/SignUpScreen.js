@@ -26,6 +26,16 @@ import { Container,
 } from 'native-base';
 
 class SignUpScreen extends Component {
+  static navigationOptions = {
+    title: 'Register',
+    headerStyle: {
+      backgroundColor: '#204E6D',
+    },
+    headerTintColor: 'white',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  };
 
   constructor () {
     super()
