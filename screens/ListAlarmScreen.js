@@ -14,6 +14,10 @@ import {
   Icon,
   Button
 } from 'native-base';
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
+import { getNotification, deleteNotification } from '../store/notifications/notification.actions'
 
 class ListAlarmScreen extends Component {
   static navigationOptions = ({
@@ -28,50 +32,58 @@ class ListAlarmScreen extends Component {
     }
   })
 
+  componentDidMount() {
+    const id = this.props.user.user._id;
+    this.props.getNotification(id)
+  }
+
+  deleteNotification(notification) {
+    this.props.deleteNotification(notification)
+    alert('Trash')
+  }
+
   render() {
-    return (
-      <Container>
-        <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
-        <View style={{flex: 1, alignItems:'center', width:'100%', paddingTop:40}}>
-        
-          <Text style={{fontSize:32, fontFamily:'Iowan Old Style'}}>
-            List Alarm
-          </Text>
-        
+    if(this.props.notificationReducer.loading) {
+      return <Text>Loading</Text>
+    } else {
+      if(this.props.notificationReducer.data.data) {
+      return (
+        <Container>
+          <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
+          <View style={{flex: 1, alignItems:'center', width:'100%', paddingTop:40}}>
           
-        
-            <Content scrollEnabled={false} style={{marginTop:40}}>
-              <SwipeRow
-                rightOpenValue={-75}
-                body={
-                  <View style={{width:'80%', marginLeft:8}}>
-                    <Text>List Alarm 1</Text>
-                  </View>
+            <Text style={{fontSize:32, fontFamily:'Iowan Old Style'}}>
+              List Alarm
+            </Text>
+          
+              <Content scrollEnabled={false} style={{marginTop:40}}>
+                { 
+                  this.props.notificationReducer.data.data.map(notification => (
+                    <SwipeRow
+                      rightOpenValue={-75}
+                      key={notification._id}
+                      body={
+                        <View style={{width:'80%', marginLeft:8}}>
+                          <Text>{ notification.title } - { notification.date }</Text>
+                        </View>
+                      }
+                      right={
+                        <Button danger onPress={()=> { this.deleteNotification(notification)}}>
+                          <Icon active name="trash" />
+                        </Button>
+                      }
+                    />
+                  ))
                 }
-                right={
-                  <Button danger onPress={() => alert('Trash')}>
-                    <Icon active name="trash" />
-                  </Button>
-                }
-              />
-              <SwipeRow
-                rightOpenValue={-75}
-                body={
-                  <View style={{width:'80%', marginLeft:8}}>
-                    <Text>List Alarm 2</Text>
-                  </View>
-                }
-                right={
-                  <Button danger onPress={() => alert('Trash')}>
-                    <Icon active name="trash" />
-                  </Button>
-                }
-              />
-            </Content>
-          </View>
-        </ImageBackground>
-      </Container>
-    );
+              </Content>
+            </View>
+          </ImageBackground>
+        </Container>
+      );
+      } else {
+        return <Text></Text>
+      }
+    }
   }
 }
 
@@ -110,4 +122,13 @@ const styles = StyleSheet.create({
    },
 })
 
-export default ListAlarmScreen;
+const mapStateToProps = (state) => ({
+  notificationReducer: state.notification,
+  user: state.user.data.data
+})
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  getNotification, deleteNotification
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(ListAlarmScreen);

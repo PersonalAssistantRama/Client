@@ -1,6 +1,7 @@
 import PushNotification from 'react-native-push-notification';
 import { PushNotificationIOS } from 'react-native';
 import { db } from '../firebase'
+import axios from 'axios'
 
 const configure = () => {
  PushNotification.configure({
