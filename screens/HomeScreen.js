@@ -49,6 +49,7 @@ class HomeScreen extends Component {
       deskripsipengingat: '',
       latitude: null,
       longitude: null,
+      error: null
     };
 
     this.onSpeak = this.onSpeak.bind(this);
@@ -113,9 +114,19 @@ class HomeScreen extends Component {
     }
   }
   componentDidMount (){
-    // if (this.props.users){
-    //   Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
-    // }
+    if (this.props.users){
+      Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
+    }
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude
+        });
+      },
+      (error) => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000},
+    );
   }
 
   setModalVisible(visible) {
@@ -127,7 +138,6 @@ class HomeScreen extends Component {
         id: this.props.users.user._id
       }
       this.props.newNotification(objNotif);
-      // localNotificationSchedule(objNotif);
       this.props.setYupiAnswer('Ok, nanti Yupi ingatkan');
       this.setState({
         modalVisible: visible,
