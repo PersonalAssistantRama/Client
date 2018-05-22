@@ -18,7 +18,7 @@ export const getNotification = (id) => {
     axios.get(`${baseUrl}/notifications/${id}`)
       .then(response => {
         console.log('ini response', response)
-        const notification = response.data;
+        const notification = response.data.data.reverse();
         dispatch(getNotificationSuccess(notification));
       })
       .catch(err => dispatch(getNotificationFailed(err)));

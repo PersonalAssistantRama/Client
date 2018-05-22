@@ -52,7 +52,6 @@ class HomeScreen extends Component {
     this.onSpeak = this.onSpeak.bind(this);
   }
   _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
-
   _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
   _handleDatePicked = (date) => {
   // let date = moment(date).format('L').split('/').reverse().join('/');
@@ -112,31 +111,32 @@ class HomeScreen extends Component {
     }
   }
   componentDidMount (){
-    if (this.props.users){
-      Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
-    }
+    // if (this.props.users){
+    //   Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
+    // }
   }
 
   setModalVisible(visible) {
-    const objNotif = {
-      title: this.state.titlepengingat,
-      message: this.state.deskripsipengingat,
-      date: this.state.showdatetime,
-      id: this.props.users.user._id
+    if(this.state.titlepengingat && this.state.deskripsipengingat && this.state.showdatetime) {
+      const objNotif = {
+        title: this.state.titlepengingat,
+        message: this.state.deskripsipengingat,
+        date: this.state.showdatetime,
+        id: this.props.users.user._id
+      }
+      this.props.newNotification(objNotif);
+      // localNotificationSchedule(objNotif);
+      this.props.setYupiAnswer('Ok, nanti Yupi ingatkan');
+      this.setState({
+        modalVisible: visible,
+      });
+      this.setState({
+        modalVisible: true,
+      });
+      this.state.audio = true
+    } else {
+      alert('Kok ga diisi lengkap?')
     }
-
-    this.props.newNotification(objNotif);
-
-    // localNotificationSchedule(objNotif);
-
-    this.props.setYupiAnswer('Ok, nanti Yupi ingatkan ya!');
-    this.setState({
-      modalVisible: visible,
-    });
-    this.setState({
-      modalVisible: true,
-    });
-    this.state.audio = true
   }
 
   render() {
@@ -193,9 +193,9 @@ class HomeScreen extends Component {
         <View style={styles.container}>
           <ImageBackground source={require('../assets/img/background.jpg')} style={styles.backgroundImage}>
           <ScrollView>
-            <View style={{flexGrow: 1,alignItems:'center',justifyContent:'center', width:'100%'}}>
+            <View style={{flexGrow: 1,alignItems:'center',justifyContent:'center', width:'100%', marginTop:32}}>
             {
-              this.props.data.data ? <View style={styles.both}><Text style={{fontSize:16, color:'#204E6D'}}>Yupi: " {this.props.data.data} "</Text></View>:<View style={styles.both}><Text style={{fontSize:16}}>Yupi: " Hai {this.props.users.user.username}, saya Yupi "</Text></View>
+              this.props.data.data ? <View style={styles.both}><Text style={{fontSize:16, color:'#204E6D'}}>Yupi: " {this.props.data.data} "</Text></View>:<View style={styles.both}><Text style={{fontSize:16, color:'#204E6D'}}>Yupi: "Hai {this.props.users.user.username}, saya Yupi"</Text></View>
             }
 
             {
@@ -248,7 +248,7 @@ class HomeScreen extends Component {
             }
 
             <View style={{alignItems:'center',marginTop:0}}>
-              <Image source={emot} style={{justifyContent:'center',width: 250, height: 250}}/>
+              <Image source={emot} style={{justifyContent:'center',width: 200, height: 200}}/>
             </View>
 
             <View style={{flex: 1,alignItems:'center',justifyContent:'center',marginTop:30, paddingBottom:30}}>
@@ -313,10 +313,11 @@ const styles = StyleSheet.create({
     height: 40,
     width:'80%',
     backgroundColor:'white',
+    fontFamily: 'SourceSansPro',
     // opacity: 0.8,
     borderWidth: 2,
     borderColor: '#204E6D',
-    borderRadius: 18,
+    borderRadius: 16,
     marginLeft:5,
     marginRight:5,
     marginBottom:10,
