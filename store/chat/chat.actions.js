@@ -7,7 +7,8 @@ import {
   SET_INGAME_MODE,
   SET_NOT_INGAME_MODE,
   SHOW_MOVIE_LIST,
-  SHOW_FOODS_LIST
+  SHOW_FOODS_LIST,
+  URL_DETAIL
 } from './chat.actionsTypes';
 import { changeQuery } from '../helpers/index'
 
@@ -44,6 +45,11 @@ const changeFoodStatus = (payload) => ({
   payload
 })
 
+const getDetailUrl = (payload) => ({
+  type: URL_DETAIL,
+  payload
+})
+
 const baseUrl = 'http://35.198.243.108'
 
 export const answerGame = (id, answer) => {
@@ -73,6 +79,13 @@ export const answerGame = (id, answer) => {
 export const setYupiAnswer = (data) => {
   return dispatch => {
     dispatch(getReplySuccess({data}))
+  }
+}
+
+export const getUrl = (data) => {
+  return dispatch => {
+    dispatch(loading())
+    dispatch(getDetailUrl(data))
   }
 }
 

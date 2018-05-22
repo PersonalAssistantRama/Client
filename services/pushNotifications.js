@@ -1,7 +1,5 @@
 import PushNotification from 'react-native-push-notification';
-import { PushNotificationIOS } from 'react-native';
-import { db } from '../firebase'
-import axios from 'axios'
+import { PushNotificationIOS } from 'react-native'
 
 const configure = () => {
  PushNotification.configure({
@@ -35,16 +33,6 @@ const localNotificationSchedule = (objNotif) => {
     vibrate: true,
     vibration: 300,
     date: new Date(objNotif.date)
-  })
-
-  db.ref(`/user/${userId}`).push({
-    objNotif
-  })
-  .then(res => {
-    console.log(res)
-  })
-  .catch(err => {
-    console.log(err)
   })
 }
 
