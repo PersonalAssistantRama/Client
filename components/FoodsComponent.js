@@ -31,6 +31,8 @@ class FoodsComponent extends Component {
   // }
 
   getFoods = () => {
+    console.log('lat ',this.props.lokasi.lat);
+    console.log('lat ',this.props.lokasi.long);
     axios({
       method: 'post',
       url: `http://35.198.243.108/foods`,
@@ -39,7 +41,7 @@ class FoodsComponent extends Component {
         long: this.props.lokasi.long
       }
     }).then(response => {
-      console.log("response===", response.data.data)
+      console.log("response ===", response.data.data)
       this.setState({
         data: response.data.data
       })
@@ -56,14 +58,13 @@ class FoodsComponent extends Component {
           <TouchableOpacity
             onPress={()=> this.props.navigation.navigate('DetailPage',
             {url: value.restaurant.url})}
-            // onPress={() => this.getUrlDetail(value.restaurant.url)}
           >
           <Image square
-          source={{uri:value.restaurant.featured_image}}
+          source={{uri:value.restaurant.thumb}}
           style={styles.imageStyle}
           />
+        <Text style={styles.title}>{value.restaurant.name}</Text>
           </TouchableOpacity>
-          <Text style={styles.title}>{value.restaurant.name}</Text>
           </View>
         ))
       }
