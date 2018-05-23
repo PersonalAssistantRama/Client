@@ -114,9 +114,6 @@ class HomeScreen extends Component {
     }
   }
   componentDidMount (){
-    if (this.props.users){
-      Tts.speak("halo "+this.props.users.user.username+ " saya yupi")
-    }
     navigator.geolocation.getCurrentPosition(
       (position) => {
         this.setState({
@@ -124,8 +121,8 @@ class HomeScreen extends Component {
           longitude: position.coords.longitude
         });
       },
-      (error) => this.setState({ error: error.message }),
-      { enableHighAccuracy: true, timeout: 20000},
+      (error) => this.setState({ error: error.message,latitude:-6.260617,longitude:106.781602 }),
+      { enableHighAccuracy: true, timeout: 5000},
     );
   }
 

@@ -1,4 +1,4 @@
-#Tue May 22 21:32:24 WIB 2018
+#Wed May 23 11:34:33 WIB 2018
 base.0=/home/lupa/phase3/yupi/yupi6/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/lupa/phase3/yupi/yupi6/client/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
